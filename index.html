@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>마포FM</title>
+        <!-- 나의 css -->
         <link rel="stylesheet" href="./css/index.css">
         <script src="https://kit.fontawesome.com/7659b9df8c.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
         <!-- 중현 작업 라디오!! 파트 -->
@@ -14,71 +16,74 @@
 
         <div id="page">
 
-            <header id="header">
-                <!-- main logo -->
+            <header class="header">
+                <div class="header_wrapper">
+                     <!-- main logo -->
                 <div id="logo">
-                    <a href="./index.html"> <img src="./image/img_main_home_page/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_main_home_page/img_top_main_mapoFM.png" alt="마포FM"> </a>
                 </div>
 
                 <!-- main menu -->
-                <div id="main_menu">
-                    <ul>
-                        <li>
-                            <a href="" class="top_menu_text">소개</a>
-                        </li>
-                        <li>
-                            <a href="" class="top_menu_text">라디오</a>
-                        </li>
-                        <li>
-                            <a href="" class="top_menu_text">사업</a>
-                        </li>
-                        <li>
-                            <a href="" class="top_menu_text">커뮤니티</a>
-                        </li>
-                        <li>
-                            <a href="" class="top_menu_text">대관/행사</a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-user"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-shopping-cart"></i></a>
-                        </li>
-                    </ul> 
+                <nav class="nav">
+                    <div id="main_menu">
+                        <ul>
+                            <li>
+                                <a href="" class="top_menu_text">소개</a>
+                            </li>
+                            <li>
+                                <a href="" class="top_menu_text">라디오</a>
+                            </li>
+                            <li>
+                                <a href="" class="top_menu_text">사업</a>
+                            </li>
+                            <li>
+                                <a href="" class="top_menu_text">커뮤니티</a>
+                            </li>
+                            <li>
+                                <a href="" class="top_menu_text">대관/행사</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-user"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                            </li>
+                        </ul> 
+                    </div>
+                </nav>
+
                 </div>
-
+               
             </header>
-
-            <nav id="nav"></nav>
 
             <aside></aside>
 
             <!-- 메인 홈페이지에 대한 전체적인 body영역 -->
-            <section id="main" class="section">
-                <article id="main_top_slide_img" class="article">
-                    <div class="main_slide_img">
-                        <img id="img_main_slide_01" src="./image/img_main_home_page/img_main_slide_01.jpg" alt="">
-                        <div id="main_on_air">
+            <section id="content" class="content">
+                <article id="content_top_slide_img" class="article">
+                    <div class="content_slide_img">
+                        <img id="img_content_slide_01" src="./image/img_main_home_page/img_main_slide_01.jpg" alt="">
+                        <div id="content_on_air">
                             <a href="">
-                                <div id="main_on_air_button">ON AIR</div>
+                                <div id="content_on_air_button">ON AIR</div>
                             </a>
                         </div>
-                        <div class="main_slide_img">
+                        <div class="content_slide_img">
                             <a href="">
-                                <img id="img_main_slide_02" src="./image/img_main_home_page/img_main_slide_02.jpg" alt="">
+                                <img id="img_content_slide_02" src="./image/img_main_home_page/img_main_slide_02.jpg" alt="">
                             </a>
                         </div>
                     </div>
                 </article>
 
                 <!-- 공간을 주기위하여 -->
-                <div class="main_item_wrapper"></div>
+                <div class="content_item_wrapper"></div>
 
                 <!-- 메인 홈페이지 항목들 있는 곳 -->
-                <article id="main_body" class="article">
+                <article id="content_body" class="article">
 
                     <!-- 메인 홈페이지에 해당하는 첫번째 이미지들 4개 -->
-                    <div class="main_item_wrapper">
+                    <div class="content_item_wrapper">
                         <!-- 아이폰용 다운로드 -->
                         <div class="main_item">
                             <a href="">
@@ -87,7 +92,7 @@
                         </div>
 
                         <!-- 청취방법 -->
-                        <div class="main_item">
+                        <div class="content_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_headset.jpg" alt="">
                             </a>
@@ -95,14 +100,14 @@
                         </div>
 
                         <!-- 오늘의 마포소식 -->
-                        <div class="main_item">
+                        <div class="content_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_today_mapo.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 방송활동가를 모집합니다. -->
-                        <div class="main_item">
+                        <div class="content_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_recruitment.jpg" alt="">
                             </a>
@@ -110,69 +115,69 @@
                     </div>
 
                     <!-- 메인 프로그램 나눔 선 -->
-                    <div class="main_item_wrapper"><hr></div>
+                    <div class="content_item_wrapper"><hr></div>
 
                     <!-- 메인 프로그램 글씨 -->
-                    <div class="main_item_wrapper">
-                        <strong id="main_program_text">메인 프로그램</strong>
+                    <div class="content_item_wrapper">
+                        <strong id="content_program_text">메인 프로그램</strong>
                     </div>
 
                     <!-- 메인 프로그램 나눔 선 -->
-                    <div class="main_item_wrapper"><hr></div>
+                    <div class="content_item_wrapper"><hr></div>
 
                     <!-- 메인 프로그램 아이템들 -->
-                    <div class="main-item_wrapper">
+                    <div class="content-item_wrapper">
                         <!-- 첫번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_01.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 두번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_02.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 세번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_03.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 네번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_04.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 다섯번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_05.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 여섯번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_06.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 일곱번째 그림 -->
-                        <div class="main_program_item">
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_07.jpg" alt="">
                             </a>
                         </div>
 
                         <!-- 여덣번째 그림 -->
-                        <div>
+                        <div class="content_program_item">
                             <a href="">
                                 <img src="./image/img_main_home_page/img_main_program_08.jpg" alt="">
                             </a>
