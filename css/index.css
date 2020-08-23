@@ -85,11 +85,12 @@ a{text-decoration: none;}
 
 #content_on_air_button{
     background-color: #FF6868;
+    border-radius: 3px;
     position: absolute;
     z-index: 3;
     top: 250.15px;
     font-weight: bold;
-    padding: 1em 1.75em;
+    padding: 1em 0em;
     margin: 30px 0px 10px;
 }
 
@@ -109,6 +110,7 @@ a{text-decoration: none;}
 
 #content_on_air_button a{
     color: white;
+    padding: 1em 1.75em;
 }
 
 #img_content_slide_01{
@@ -122,6 +124,24 @@ a{text-decoration: none;}
 #img_content_slide_01, #img_content_slide_02{
     position: absolute;
     width: 100%;
+}
+
+/* content body */
+#content_body{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.content_item_wrapper{
+    display: inline-block;
+    width: 980px;
+    max-width: 980px;
+    min-width: 640px;
+}
+
+.content_item{
+    /* display: flex; */
 }
 
 
@@ -158,48 +178,3 @@ a{text-decoration: none;}
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* #main_ul{
-} */
-
-/* ================================================================================================= */
-
-/* *{padding: 0; margin: 0;} */
-
-/* Main Page Header */
-/* ul{list-style-type: none;}
-a{text-decoration: none;}
-
-.header{
-    width: 1240px;
-    max-width: 1240px;
-    min-width: 980px;
-    padding: 15px 0px;
-    background-color: yellow;
-    position: fixed;
-} */
-
-/* .header *{
-    display: inline-block;
-} */
-
-/* logo */
-/* #logo{
-    position: absolute;
-    left: 0px;
-    padding-left: 16px;
-} */
-
-/* .logo{
-    width: 120px;
-} */
-
-/* 메뉴들 */
-/* #main_menu{
-    position: absolute;
-    padding: 0px 0px;
-    top: 0px; right: 0px;
-    padding: 15px 0px;
-    padding-right: 16px;
-    font-size: 15px;
-} */
