@@ -56,6 +56,7 @@ a{text-decoration: none;}
 
 #main_menu a{
     color: white;
+    margin-right: 1em;
     text-align: center;
 }
 
