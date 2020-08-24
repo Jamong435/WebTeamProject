@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>intro</title>
+        <meta charset="utf-8">
+
+        <style>
+            body{
+                margin: 0;
+                padding-right: 50px;
+                padding-left: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* Header */
+            header{
+                padding: 10px;
+            }
+
+            /* section */
+            section{
+                margin-top: 100px;
+                padding: 50px;
+                
+            }
+
+            /* class */
+            .sales{
+                width: 300px;
+            }
+
+            /* id */
+            #red{
+                color: red;
+            }
+
+            .sales:hover{
+                filter:opacity(70%);
+                cursor: pointer;
+            }
+
+            /* footer */
+            footer{
+                padding: 20px;
+                text-align: center;
+            }
+
+
+            /* 반응형 웹 적용 (RWD) */
+            /* 미디어쿼리 적용 (해상도에 반응하기) */
+            /* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
+            @media screen and (max-width: 600px){
+
+            }
+
+  
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+   
+
+        <!-- Header -->
+
+        <header>
+
+        </header>
+
+
+        <!-- section -->
+
+        <section>
+
+            <div>
+
+                <p style="font-weight: bold; color: darkblue;"> &lt; 마포FM 굿즈 &gt; </p>
+
+                <br><br>
+
+                <p style="font-weight: bold; color: rgb(2, 218, 74);">
+                    마포FM 굿즈가 탄생했습니다! <br>
+                    마포FM에서 활동하거나, 마포FM과 뜻을 함께 하고 싶은 분들을 위한 아이템!! <br>
+                    마포FM팬을 위한 굿즈! 지금 만나보세요 <br>
+
+                </p>
+
+            </div>
+
+            <br><hr><br>
+
+            <div id="hood" onclick="item" class="sales" style="border: 1px solid red;">
+
+                <img src="https://image.msscdn.net/images/goods_img/20170821/605557/605557_2_500.jpg" height="350" width="300" alt="img" >
+
+                <p>마포FM 후드집업</p>
+                <p id="red" style="display: inline-block;">30,000원</p>
+                <p style="display: inline-block; color: darkgray; text-decoration: line-through;">40,000원</p>
+
+            </div>
+           
+        </section>
+
+        <script>
+
+            //판매 품목을 가져와서 클릭이벤트 처리
+            var clickitem=document.getElementById('hood');
+            clickitem.onclick = function(){
+                window.open('https://www.mapofm.net/product/hood', '_blank');
+                //window.location.href
+            };
+
+        </script>
+
+
+        <!-- footer -->
+
+        <footer>
+
+            <p style="font-size: small;">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
+            <p style="font-size: small;">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
+
+        </footer>
+        
+
+    </body>
+
+</html>
