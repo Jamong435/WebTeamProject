@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>라디오 광고 | 마포FM</title>
-        <style>
-            *{padding: 0; margin: 0;}
-            body{width: 100%;}
-        </style>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,7 +16,11 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+        <style>
+            *{padding: 0em; margin: 0em; font-family: 'Nanum Gothic', sans-serif;}
+            body{width: 100%;}
+            #here:hover{text-decoration: none;}
+        </style>
             
 
     </head>
@@ -31,16 +33,13 @@
                 </nav>
             </div>
         </header>
-        
-        <aside>
-           
-        </aside>
+
         <section id="main" class="text-center">
            
             <div id="section01" style="width: 980px; display: inline-block;">
 
-                <div id="text_radio" style="text-align: center;">
-                    <strong><span>라디오 광고 안내</span></strong>
+                <div id="text_radio" style="text-align: center; color: #195887;">
+                    <h3><strong><span>라디오 광고 안내</span></strong></h3>
                 </div>
     
                 <!-- text밑줄 -->
@@ -49,18 +48,84 @@
                 </div>
     
                 <!-- 전체 20%이미지 -->
-                <!-- 확인주석 -->
                 <div style="text-align: center;">
                     <div style="width: 20%; display: inline-block;">
                         <img src="./imgs_song/image_1520228034961_300.jpg" alt="선물상자 이미지1" style="width: 100%;">
                     </div>
                 </div>
 
+                <div style="margin: 20px 0px;">
+                    <hr style="width: 90%; background-color: gainsboro; text-align: center; display: inline-block;">
+                </div>
+
+                <div style="padding: 16px;">
+                    <div id="text01">
+                        <p class="itemText" style="color: #777777; font-size: 15px; text-align: center; margin-bottom: 0em;">
+                            <span style="color: rgb(119, 119, 119); font-weight: bold; letter-spacing: 0.01em; background-color: transparent;">유일한 마포지역 타켓 라디오광고!</span>
+                        </p>
+                        <p class="itemText" style="color: #000000; font-size: 15px; margin-bottom: 0em">
+                            <span style="font-weight: bold;">마포FM의 청취율</span>
+                        </p>
+                        <p class="itemText" style="color: #BC0000; font-size: 44px; margin-bottom: 0em; margin-top: 0em;">
+                            <span style="font-style: inherit; font-weight: bold;">8.68%</span>
+                        </p>
+                        <p class="itemText" style="font-size: 11px; color: #000000; font-weight: bold;"><span>('공동체라디오 이용실태'조사, 한국 전파진흥 협회)</span></p>
+                        <p style="font-size: 29px;"></p>
+    
+                        <p class="itemText" style="font-size: 15px; color: #195887; margin: 0em; font-weight: bold;">
+                            <span >저렴한 가격으로 높은 광고 효과를 보는 기회!</span>
+                        </p>
+                        <p style="margin: 0em;"><br></p>
+    
+                        <p style="margin: 0em; font-size: 15px; font-weight: bold;">
+                            <span style="color: #000000;">광고는 사전 상의 후 <span style="text-decoration: underline;">제작-컨펌-편성</span> 과정으로 진행되며</span>
+                        </p>
+    
+                        <p style="margin: 0em; font-size: 15px; font-weight: bold;">
+                            <span style="color: #000000;">편성은 각 프로그램별 전후 또는 프로그램 내에 배치됩니다</span>
+                        </p>
+    
+                    </div>
+                </div>
+
+            </div>
+                
+            <div>
+                <p style="background-color: transparent; height: 1.5em; margin: 0em;"></p>
+            </div>
+
+            <!-- '여기'누르면 라디오파트 - 프로그램 소개로 넘어가는 링크 -->
+            <div style="padding: 16px;">
+                <p style="margin: 0em; font-size: 15px; font-weight: bold;">
+                    <span>*시간대에 해당하는 프로그램이 궁굼하다면?
+                        <span><a id="here" href="https://www.mapofm.net/program" target="_self" style="color: red;">여기</a></span>를 참조하세요</span>
+                </p>
+            </div>
+
+            <div style="padding: 16px;">
+                <p style="color: #195887; margin: 0em;">
+                    <span style="font-size: 15px; font-weight: bold;">위의 안내사항은 '라디오'광고이며 홈페이지 광고는 전화로 문의 바랍니다</span>
+                </p>
+                <p style="color: #0c0c0c; margin: 0em;">
+                    <span style="font-weight: bold;">라디오&홈페이지 광고 문의 02-332-3247</span>
+                </p>
+            </div>
+            
+            <div style="padding: 16px;">
+                <p style="font-size: 1em;"></p>
+            </div>
+
+            <div style="text-align: center;">
+                <hr style="width: 90%; background-color: gainsboro; text-align: center; display: inline-block;" >
             </div>
             
         </section>
         <footer id="footer">
-
+            <div id="icon" style="margin: 0em; padding: 16px;">
+                <a href="tel:023323247" id="footerSns-tel">
+                    <div data-i="icomoon-telephone"></div>
+                </a>
+            </div>
         </footer>
 
     </body>
