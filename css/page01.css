@@ -1,0 +1,14 @@
+.logo{width: 120px; }
+
+.menu_line ul{list-style-type: none;}
+.menu_line ul a{text-decoration: none;}
+
+.menu_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sub_menu{
+    
+}
