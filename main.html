@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <!-- 아이콘을 가져올수있는 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/d805160ba2.js" crossorigin="anonymous"></script>
+    <!-- 폰트를 가져올수있는 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img class="mySlides" src="./image/img_main_slide_01.jpg"
+                style="width:100%; min-width: 1000px; ">
+                <div class="mySlides" style="width:100%; min-width: 1500px;  height: 1000px; background: url(./image/img_main_slide_02.jpg);">
+                <div id="content_shall_we_radio" >SHALL WE RADIO?</div>
+                <div id="content_on_air_button"><a href="http://plive.podbbang.com/mapofm_app.mp3" target="_blank">ON AIR</a></div>
+            </div>
+    
+
+
+    </header>
+
+
+    <div class="wrap_navbar">
+        <nav class="navbar" >
+            <div class="navbar_logo" style="position: sticky; top: 0;">
+                <img class="site-logo" src="//contents.sixshop.com/uploadedFiles/53441/default/image_1519714732215.png"
+                    width="120" height="40">
+            </div>
+            <ul class="navbar_menu">
+                <li><a href="">소개</a></li>
+                <li><a href="">라디오</a></li>
+                <li><a href="">사업</a></li>
+                <li><a href="">커뮤니티</a></li>
+                <li><a href="">대관/행사</a></li>
+                <li><a href=""><i class="fas fa-user"></i></a></li>
+                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <div id="content">
+
+        
+        <img src="./image/img_main_ipone_down.jpg" alt="" width="150px"height="150px">
+        <img src="./image/img_main_headset.jpg" alt="" width="150px"height="150px">
+        <img src="./image/img_main_today_mapo.jpg" alt="" width="150px"height="150px">
+        <img src="./image/img_main_recruitment.jpg" alt="" width="150px"height="150px">
+    <hr>
+    <hr>
+    </div>
+
+
+    <script>
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
