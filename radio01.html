@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>마포FM</title>
+
+        <!-- 이미지 아이콘 사진 -->
+        <script src="https://kit.fontawesome.com/7659b9df8c.js" crossorigin="anonymous"></script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <style>
+            *{
+    padding: 0; 
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
+}
+
+/* Main Page Header */
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+.header{
+    width: 100%;
+    padding: 15px 0px;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    text-align: center;
+    
+    
+}
+.header *{
+    display: inline-block;
+}
+
+.header_wrapper{
+    width: 1240px;
+    max-width: 1240px;
+    min-width: 640px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* logo */
+#logo{
+    left: 0px;
+    padding-left: 16px;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* 메뉴들 */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#main_menu{
+    right: 0px;
+    padding: 15px 0px;
+    padding-right: 16px;
+    font-size: 15px;
+}
+
+#main_menu a{
+    color: white;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#main_menu a:hover{
+    color: #FFFFFF99;
+}
+
+/* ========================================================================================== */
+
+/* 전체 몸체 영역 */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 라디오 사연쓰기 이미지 */
+.content_top_image #content_radio_img{
+    background-image: url('./image/img_radio_page/img_radio_page01_mic.jpg');
+    width: 100%;
+    height: 640px;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* 라디오 사연쓰기 있는 란의 이미지 안의 h1요소 */
+.content_top_image #content_radio_img h1{
+    font-size: 64px;
+    margin: 0.5em 0em;
+}
+
+/* 라디오 사연쓰기 있는 란의 이미지 안의 p요소, 버튼요소 */
+.content_top_image #content_radio_img p, .content_top_image #content_radio_img .button_history{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 2em 0em;
+}
+
+/* 라디오 사연쓰기 있는 란의 이미지 안의 버튼요소 안의 a항목 */
+.content_top_image #content_radio_img .button_history a{
+    background-color: #FF6868;
+    border-radius: 3px;
+    padding: 1em 1.2em;
+    margin: 30px 0px 10px;
+    color: white;
+}
+
+.content_top_image #content_radio_img .button_history a:hover{
+    background-color: #FF686899;
+    color: #FFFFFF99;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.footer_wrapper{
+    display: inline-block;
+    max-width: 980px;
+    min-width: 640px;
+}
+
+.footer #footer_menu li{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.footer #footer_menu li a{
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer #footer_menu li a:hover{
+    color: lightcoral;
+}
+
+#footer_info{
+    color: #222222;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+</style>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_wrapper">
+                 <!-- main logo -->
+            <div id="logo">
+                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_main_home_page/img_top_main_mapoFM.png" alt="마포FM"> </a>
+            </div>
+
+            <!-- main menu -->
+            <nav class="nav">
+                <div id="main_menu">
+                    <ul>
+                        <li>
+                            <a href="" class="top_menu_text">소개</a>
+                        </li>
+                        <li>
+                            <a href="" class="top_menu_text">라디오</a>
+                        </li>
+                        <li>
+                            <a href="" class="top_menu_text">사업</a>
+                        </li>
+                        <li>
+                            <a href="" class="top_menu_text">커뮤니티</a>
+                        </li>
+                        <li>
+                            <a href="" class="top_menu_text">대관/행사</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+
+            </div>
+           
+        </header>
+        <section class="content">
+            <article class="content_top_image">
+                <div id="content_radio_img">
+                    <h1>사연과 신청곡</h1>
+                    <p>제목에 말머리로 프로그램명을 적어주세요. 예) [오색오감]</p>
+
+                    <div class="button_history"><a href="">사연쓰기(클릭)</a></div>
+                </div>
+                
+            </article>
+            
+            <article class="content_top_table"></article>
+
+        </section>
+        <footer class="footer">
+
+            <div class="footer_wrapper">
+
+                <!-- 전화, 메세지, 페이스북, 인스타그램 등등의 아이콘들 24 24크기 -->
+                <div class=""></div>
+
+                <!-- footer 메뉴  -->
+                <div id="footer_menu">
+                    <ul>
+                        <li>
+                            <a href="">제보하기</a>
+                        </li>
+
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+
+                        <li>
+                            <a href="">개인정보처리방침</a>
+                        </li>
+
+                        <li>
+                            <a href="">사업자정보확인</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <!-- 상호... 등등 -->
+                <div id="footer_info">
+                    <p class="footer_info">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
+                    <p class="footer_info">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
+                    <br><br>
+                    <p class="footer_info">Copyright © (사)마포공동체라디오. All Rights Reserved.</p>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </body>
+</html>
