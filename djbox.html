@@ -150,52 +150,125 @@ a{text-decoration: none;}
     color: #FFFFFF99;
 }
 
-.borad_border{
-       width: 100%;
-       display: flex;
-     
-       background-color: white;
-       justify-content: center;
-   }
-    table{
-        border-collapse: collapse;
-    }
-    caption{
-        display: none;
-    }
-    .board_list_wrap{
-        flex-shrink: 0;
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: column;
-       justify-content: center;
-        color: #999;
-        padding: 0 30px;
-    }
-    /* 중간에있는 회색선 */
-    .board_list tr{
-        border-bottom: 1px solid #999;
+.board_border{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+}
+caption{
+    display: none;
+}
+.board_list_wrap{
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #999;
+    padding: 0 30px;
+}
+/* 중간에있는 회색선 */
+.board_list tr{
+    border-bottom: 1px solid #999;
+}
+.board_list tr a{
       
-    }
-    .board_list tr a{
-      
-        color: #999;
-    }
+    color: #999;
+}
     
-    .board_list{
-        width: 100%;
+.board_list{
+    width: 100%;
         
        
-    }
-    .board_list th,td{
-        padding: 23px;
-        color: #999;
+}
+.board_list th,td{
+    padding: 23px;
+    color: #999;
         
-    }
-    .board_list tr td:nth-child(2){
-       text-align: left;
-    }
+}
+.board_list tr td:nth-child(2){
+    text-align: left;
+}
 
+.content_bottom_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.content_bottom_wrap .content_bottom{
+    width: 879px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_bottom_wrap .content_bottom #form_search{
+    padding: 10px; 
+    display: inline-block;
+}
+
+.content_bottom_wrap .content_bottom #form_search #search{
+    padding: 10px 15px; 
+    width: 220px; 
+    border: 1px solid #a9a9a9; 
+    margin-bottom: 0.5em; 
+    border-radius: 5px;
+}
+
+.content_bottom_wrap .content_bottom #form_search #search_button{
+    padding: 9px 20px 10px 20px; 
+    margin-bottom: 0.5em; 
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    background-color:#FF6868 ; 
+    color: white; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content_bottom_wrap .content_bottom #form_search #search_button:hover{
+    background-color:#FF6868CC; 
+    color: #FFFFFFCC; 
+}
+
+.content_bottom_wrap .content_bottom #write_text{
+    padding: 10px 20px 10px 20px; 
+    margin-bottom: 0.5em; 
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    background-color:#FF6868 ; 
+    color: white; 
+    font-weight: bold;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.content_bottom_wrap .content_bottom #write_text:hover{
+    background-color:#FF6868CC ; 
+    color: #FFFFFFCC; 
+}
+
+.paging{
+                  
+    padding:20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.paging a{
+    color: gray;
+}
+
+.paging a.numon{
+    align-items: center;
+    color: tomato;
+}
 
 /* footer */
 .footer{
@@ -299,7 +372,7 @@ a{text-decoration: none;}
 
         <section class="content">
             
-            <article class="borad_border">
+            <article class="board_border">
                 <div id="board_list_wrap">
                     <table class="board_list">
                         <tr>
@@ -384,12 +457,31 @@ a{text-decoration: none;}
                         
                     </table>
                 </div>
-
-                <div class="content_bottom_01">
-                    <div></div>
-                </div>
-
+                
             </article>
+
+            <div class="content_bottom_wrap">
+                <div class="content_bottom">
+                    <form id="form_search" action="./login.php" method="POST">
+                        <input id="search" type="text" name="search"></label>
+                        <input id="search_button" type="submit" value="검색">    
+                    </form>
+
+                    <button id="write_text" onclick="clickWrite()">글쓰기</button>
+
+                </div>
+            </div>
+        
+            <div class="paging">
+                
+                <a href="#" class="numon">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="num">6</a>
+                
+            </div>
+
 
             <footer class="footer">
 
