@@ -26,6 +26,66 @@
                 text-align: center;
             }
 
+            /* class */
+
+
+            article{
+                display: block;
+                align-items: center;
+                margin: 10px;
+            }
+            
+            #member-img{
+                width: 600px;
+                height: 450px;
+
+                opacity: 80%;
+            }
+
+            #member-img:hover{
+                opacity: 60%;
+                transition-duration: 0.3s;
+            }
+
+            article h2{
+                position: relative; bottom:150px;
+                color: ghostwhite; font-weight: bold; font-size: 2em;
+            }
+
+            .contact{
+                position: relative; bottom: 150px;
+                color: ghostwhite; font-weight: bold;
+            }
+
+
+
+            /* container */
+            
+            .container{
+                /* border: 2px solid hotpink; */
+
+                width: 1200px;
+                height: 450px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                
+                display: flex;
+
+                flex-direction: row;
+                align-items: baseline;
+     
+
+            }
+
+            #members{
+                /* border: 3px solid gold; */
+
+                margin-top: 100px;
+                display: flex;
+
+                align-items: center;
+                flex-direction: column;
+            }
          
 
             /* footer */
@@ -64,6 +124,64 @@
 
         <section>
 
+            <h1 style="color: rgb(49, 84, 136); font-size: 2em;">4층 사람들</h1>
+
+            <br><hr style="width: 20%;"><br>
+
+            <div id="members">
+
+                <div class="container">
+
+                    <article>
+                        <img id="member-img" src="https://t1.kakaocdn.net/friends/kfo-common/pcrtn/brand/thumb_emoticon3d.jpg">
+                        <h2 class="name">송덕호 방송본부장</h2>
+                        <p class="contact">dhsong@mapofm.net 070-7542-7567</p>
+    
+                    </article>
+    
+                    <article>
+                        <img id="member-img" src="https://i.ytimg.com/vi/xyZjniR39oY/maxresdefault.jpg">
+                        <h2 class="name">장지웅 PD</h2>
+                        <p class="contact">sturike89@mapofm.net 070-7542-7550</p>
+    
+                    </article>
+    
+                </div>
+
+                <div class="container">
+
+                    <article>
+                        <img id="member-img" src="https://golfshop-vx.s3.ap-northeast-2.amazonaws.com/Image-shop-vx/19FW/VBWA1AWWM0003PNKF/p01.jpg">
+                        <h2 class="name">이유진 PD</h2>
+                        <p class="contact">bezzang@mapofm.net 070-7542-7569</p>
+    
+                    </article>
+    
+                    <article>
+                        <img id="member-img" src="https://t1.daumcdn.net/friends/prod/category/M004_friends_frodo.jpg">
+                        <h2 class="name">배진호 PD</h2>
+                        <p class="contact">dongradio@mapofm.net 070-7542-7568</p>
+    
+                    </article>
+    
+                </div>
+
+
+                <div class="container">
+
+                    <article>
+                        <img id="member-img" src="https://i.pinimg.com/originals/1b/51/73/1b51731e55bd51232386fb8f8212d8a9.jpg">
+                        <h2 class="name">이민선 PD</h2>
+                        <p class="contact">mapoin@mapofm.net</p>
+    
+                    </article>
+
+    
+                </div>
+
+            </div>
+
+            
 
            
         </section>
