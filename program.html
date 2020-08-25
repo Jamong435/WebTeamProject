@@ -171,6 +171,20 @@
                 margin-top: 5em; /* 좌측 위로 5글자 만큼 띄우기 */
             }
 
+            .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory{
+                /* flex-flow: 5; */
+                width: 50%;
+                padding: 0px 20px;
+                margin: 0px 4px 0px 0px;
+            }
+
+            .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+                width: 50%;
+                /* flex-flow: 5; */
+                padding: 0px 20px;
+                margin: 0px 4px 0px 0px;
+            }
+
             .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory{
                 /* flex-flow: 5; */
                 width: 50%;
@@ -312,6 +326,17 @@
                 font-size: 11px;
                 font-family: Arial, Helvetica, sans-serif;
             }
+
+            /* 반응형 웹 (RWD) */
+            /* 미디어 쿼리 (해상도에 반응하기) */
+            /* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
+            @media screen and (max-width:640px) {
+                #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
         </style>
 
     </head>
