@@ -7,6 +7,12 @@
 
 
         <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
             body{
                 margin: 0;
                 padding-right: 100px;
@@ -14,7 +20,6 @@
                 font-family: 'Nanum Gothic', Helvetica, sans-serif;
 
                 text-align: center;
-                align-content: center;
             }
 
             /* Header */
@@ -29,13 +34,40 @@
                 text-align: center;
             }
 
+            
+            /* container */
+
+            #members{
+                /* border: 3px solid gold; */
+
+                margin-top: 100px;
+                display: flex;
+
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .container{
+                /* border: 2px solid hotpink; */
+
+                width: 100%;
+                height: 500px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+                flex-direction: row;
+
+            }
+
+
             /* class */
 
-
             article{
-                display: block;
-                align-items: center;
+                display: inline-block;
+                /* align-items: center; */
                 margin: 10px;
+
+                flex-shrink: 1;
             }
             
             #member-img{
@@ -43,6 +75,7 @@
                 height: 450px;
 
                 opacity: 80%;
+                flex-shrink: 1;
             }
 
             #member-img:hover{
@@ -55,6 +88,10 @@
                 color: ghostwhite; font-weight: bold; font-size: 2em;
             }
 
+           article p{
+                margin-top: 30px;
+            }
+
             .contact{
                 position: relative; bottom: 150px;
                 color: ghostwhite; font-weight: bold;
@@ -62,33 +99,6 @@
 
 
 
-            /* container */
-            
-            .container{
-                /* border: 2px solid hotpink; */
-
-                width: 1200px;
-                height: 450px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                
-                display: flex;
-
-                flex-direction: row;
-                align-items: baseline;
-     
-
-            }
-
-            #members{
-                /* border: 3px solid gold; */
-
-                margin-top: 100px;
-                display: flex;
-
-                align-items: center;
-                flex-direction: column;
-            }
          
 
             /* footer */
@@ -103,7 +113,59 @@
             /* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
             @media screen and (max-width: 600px){
 
+
+                body{
+                    padding-left: 5%;
+                    padding-right: 0%;
+                }
+
+                section{
+                    padding-left: 0%;
+                    padding-right: 0%;
+                }
+
+         
+                body{
+                margin: 0;
+                padding-right: 100px;
+                padding-left: 100px;
+                font-family: 'Nanum Gothic', Helvetica, sans-serif;
+
+                text-align: center;
             }
+
+            
+            /* container */
+
+            #members{
+                /* border: 3px solid gold; */
+
+                margin-top: 100px;
+                display: flex;
+
+                align-items: justify;
+                flex-direction: column;
+            }
+            
+            .container{
+                /* border: 2px solid hotpink; */
+
+                width: 100%;
+                height: 500px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+                flex-direction: row;
+
+            }
+
+
+           article p{
+                margin-top: 30px;
+            }
+
+
+           }
 
   
 
@@ -129,7 +191,7 @@
 
             <h1 style="color: rgb(49, 84, 136); font-size: 2em;">4층 사람들</h1>
 
-            <br><hr style="width: 200px;"><br>
+            <br><hr style="width: 200px; margin: auto;"><br>
 
             <div id="members">
 
@@ -170,12 +232,12 @@
                 </div>
 
 
-                <div class="container">
+                <div class="container" style=" text-align: justify;">
 
                     <article>
                         <img id="member-img" src="https://i.pinimg.com/originals/1b/51/73/1b51731e55bd51232386fb8f8212d8a9.jpg">
-                        <h2 class="name">이민선 PD</h2>
-                        <p class="contact">mapoin@mapofm.net</p>
+                        <h2 class="name" style="text-align: center;">이민선 PD</h2>
+                        <p class="contact" style="text-align: center;">mapoin@mapofm.net</p>
     
                     </article>
 

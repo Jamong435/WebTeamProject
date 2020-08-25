@@ -39,6 +39,23 @@
                 color: red;
             }
 
+            article{
+                /* border: 3px dashed yellow; */
+
+                display: flex;
+            }
+
+            #hood{
+                /* border: 1px solid red; */
+
+                width: 400px;
+                margin: 10px;
+                line-height: 10px;
+                flex-grow: 1;
+                
+
+            }
+
             .sales:hover{
                 filter:opacity(70%);
                 cursor: pointer;
@@ -55,6 +72,27 @@
             /* 미디어쿼리 적용 (해상도에 반응하기) */
             /* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
             @media screen and (max-width: 600px){
+
+                body{
+                    padding-left: 5%;
+                    padding-right: 0%;
+                }
+
+                section{
+                    padding-left: 0%;
+                    padding-right: 0%;
+                }
+
+                #hood{
+                    width: 50%;
+                    height: 50%;
+                    flex-grow: 1;
+                }
+
+                article div img{
+                    width: 50%;
+                    height: 50%;
+                }
 
             }
 
@@ -97,15 +135,22 @@
 
             <br><hr><br>
 
-            <div id="hood" onclick="item" class="sales" style="border: 1px solid red;">
+            <article>
 
-                <img src="https://image.msscdn.net/images/goods_img/20170821/605557/605557_2_500.jpg" height="350" width="300" alt="img" >
+                <div id="hood" onclick="item" class="sales"">
 
-                <p>마포FM 후드집업</p>
-                <p id="red" style="display: inline-block;">30,000원</p>
-                <p style="display: inline-block; color: darkgray; text-decoration: line-through;">40,000원</p>
+                    <img src="https://image.msscdn.net/images/goods_img/20170821/605557/605557_2_500.jpg" 
+                    height="350" width="300" alt="img" style="flex-shrink: 2; flex-grow: 1;" >
+    
+                    <p>마포FM 후드집업</p>
+                    <p id="red" style="display: inline-block;">30,000원</p>
+                    <p style="display: inline-block; color: darkgray; text-decoration: line-through;">40,000원</p>
+    
+                </div>
 
-            </div>
+            </article>
+
+           
            
         </section>
 
