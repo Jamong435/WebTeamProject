@@ -5,16 +5,28 @@ header{
     align-items: center;
     -ms-flex-pack: justify;
     -ms-flex-align: center;
+    list-style-type: none;
 }
 
-header img{
+header .logo{
     width: 40px;
 }
 
 header .sub_menu{
-    overflow: hidden;
+    list-style-type: none;
+    visibility: hidden;
 }
 
 .body_item img{
     width: 120px;
+}
+
+.bottom_menu{
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+    list-style-type: none;
 }
