@@ -46,11 +46,38 @@
 
     </header>
 
-    <div id="news">
-
+    <div id="news_wrapper">
+        <div class="th" style="background-color: burlywood;">
+            <div class="news" id="news"></div>
+            <div class="news" style="background: blueviolet;"></div>
+            <div class="news" style="background: red;"></div>
+        </div>
     </div>
+
+
     <style>
-    
+        .news_wrapper{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 550px;
+        }
+
+        .th{
+            display: flex;
+            justify-content: space-around;
+            justify-content: center;
+            height: 500px;
+        }
+        .news{
+            width: 20%;
+            height: 500px;
+        }
+        #news{
+        background-image: url(./image/image_news.jpg);
+        
+        background-size: cover;
+        }
     </style>
 
     
