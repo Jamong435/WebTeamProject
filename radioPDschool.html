@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>라디오PD교실 | 마표FM</title>
+
+
+        
+        <!-- 구글 지도 -->
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfodN-U6OUX-d5niDbRfNpEb1bmPWJiZM&callback=initMap" async></script>
+
+        <!-- 구글폰트 -->
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoYxe-rhVVtZ_Lq7QW3yDWhlj9oKW3exk&callback=initMap"></script>
+
+        <style>            
+            #map{                
+                width: 100%;
+                height: 400px;
+            }
+        </style>
+      
+        <!-- 지도에 보여줄 함수 설정 -->
+        <!-- 37.560767, 126.917323 -->
+        
+        <script>            
+            function showMap(){
+                var e=document.getElementById('map');
+                var pos={lat:37.560767, lng:126.917323};
+                var map=new google.maps.Map(e, {center:pos, zoom:18});
+
+                var contentString='<div id="content" style="width: 220px; text-align: center; padding: 6px; font-size: 13px; line-height: 1.5;">'+
+                    '<h3>플루토</h3>'+
+                    '<p>서울 마포구 성미산로 88</p>'+
+                    '</div>';
+
+                var infowindow=new google.maps.InfoWindow({
+                    content:contentString
+                });
+
+                var marker=new google.maps.Marker({
+                    position:pos,
+                    title:"마포FM",
+                    map:map,
+                });
+
+                marker.addListener( 'click',function(){
+                    infowindow.open(map, marker);
+                });
+
+            };
+        </script>
+
+
         <style>
             *{padding: 0; margin: 0;}
             #main{display: flex; align-items: center; justify-content: center;}
@@ -45,6 +91,10 @@
             #empty_area{flex-grow: 1; flex-shrink: 2;}
 
             .img_area01{margin: auto; display: flex;}
+            #map_area{
+                padding: 16px;
+                display: flex;
+            }
 
             @media screen and (max-width: 650px) {
                 .img_area01, #button_area{
@@ -54,17 +104,16 @@
                 .button_bg{
                     margin: 16px;
                 }
-            }
-            #map_area{
-                width: 100%;
-                height: 540px;
+                #map_area{
+                    flex-shrink: 2;
+                }
             }
             
 
         </style>
     </head>
 
-    <body>
+    <body onload="showMap()">
         
         <header id="header">
 
@@ -74,36 +123,34 @@
             <div style="width: 980px; display: inline-block;">
 
                 <div id="section_text" >
-                    
                     <div class="border_top">
                         <hr>
                     </div>
-
+                
                     <div id="text_area">
                         <p>국내 유일무이! 라디오PD 지망생을 위한 강의</p>
                         <p style="color: red;">현재 하반기 강의 진행중</p>
                     </div>
-
+                
                     <div class="border_top">
                         <hr>
                     </div>
                     <!-- 여기까지 첫번째 텍스트 끝부분 -->
-
                 </div>
-
+                
                 <!-- 버튼 2개 -->
                 <div id="button_area">
                     <div class="button_bg">
                         <a class="button01" href="https://www.mapofm.net/timetableradio">지난 커리큘럼 보기</a>
                     </div>
                     <div id="empty_area"></div>
-
+                
                     <div class="button_bg">
                         <a class="button01" href="https://www.mapofm.net/review">강의 후기</a>
                     </div>
                 </div>
                 <!-- 버튼 2개 끝부분 -->
-
+                
                 <!-- 이미지 1번 시작 -->
                 <div class="img_area01" style="padding: 16px;">
                     <img style="width: 100%;" src="./imgs_song/image_1597386056321_1500.jpg" alt="제 29기 라디오PD교실">
@@ -118,26 +165,29 @@
                         <img style="width: 100%;" src="./imgs_song/image_1589436844552_750.png" alt="">
                     </div>
                 </div>
-
+                
                 <div class="border_top">
                     <div style="height: 1px;"></div>
                 </div>
+                
+                <!-- 강의장소 -->
+                <div style="padding: 16px; font-weight: bold;">
+                    <p style="color: #777777; ">■ 강의 장소</p>
+                </div>
+
+
                 <!-- 지도API -->
-
                 <div id="map_area">
-                    <div id="map_view"></div>
-                    <script>
-                        
-                    </script>
-
+                    <div id="map"></div>
                 </div>
 
             </div>
             
-            
-
-            
         </section>
 
+        
+        <footer id="footer">
+            
+        </footer>
     </body>
 </html>
