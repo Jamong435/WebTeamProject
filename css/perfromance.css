@@ -6,3 +6,15 @@ header{
     -ms-flex-pack: justify;
     -ms-flex-align: center;
 }
+
+header img{
+    width: 40px;
+}
+
+header .sub_menu{
+    overflow: hidden;
+}
+
+.body_item img{
+    width: 120px;
+}
