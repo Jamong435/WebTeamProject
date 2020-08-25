@@ -51,7 +51,6 @@
             .header_wrapper{
                 width: 1240px;
                 max-width: 1240px;
-                min-width: 640px;
                 background-color: transparent;
                 margin: auto;
                 display: flex;
@@ -152,7 +151,6 @@
             .footer_wrapper{
                 /* display: inline-block; */
                 max-width: 980px;
-                min-width: 640px;
             }
 
             .footer #footer_menu ul{
@@ -180,6 +178,21 @@
                 color: #222222;
                 font-size: 11px;
                 font-family: Arial, Helvetica, sans-serif;
+            }
+
+            @media screen and (max-width:640px){
+                #footer_info .footer_info{
+                    word-break: break-all;
+                }
+            }
+
+            @media screen and (max-width:320px){
+                .footer #footer_menu ul{
+                    flex-direction: column;
+                }
+                #footer_info .footer_info{
+                    word-break: break-all;
+                }
             }
         </style>
 

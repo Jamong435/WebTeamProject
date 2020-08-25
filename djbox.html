@@ -37,7 +37,6 @@ a{text-decoration: none;}
 .header_wrapper{
     width: 1240px;
     max-width: 1240px;
-    min-width: 640px;
     background-color: transparent;
     margin: auto;
     display: flex;
@@ -150,6 +149,10 @@ a{text-decoration: none;}
     color: #FFFFFF99;
 }
 
+.board_border_app{
+    display: none;
+}
+
 .board_border{
     width: 100%;
     display: flex;
@@ -175,20 +178,16 @@ caption{
 .board_list tr{
     border-bottom: 1px solid #999;
 }
-.board_list tr a{
-      
+.board_list tr a{  
     color: #999;
 }
     
 .board_list{
-    width: 100%;
-        
-       
+    width: 100%;      
 }
 .board_list th,td{
     padding: 23px;
-    color: #999;
-        
+    color: #999;     
 }
 .board_list tr td:nth-child(2){
     text-align: left;
@@ -283,7 +282,6 @@ caption{
 .footer_wrapper{
     /* display: inline-block; */
     max-width: 980px;
-    min-width: 640px;
 }
 
 .footer #footer_menu ul{
@@ -312,6 +310,75 @@ caption{
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 반응형 웹 (RWD) */
+/* 미디어 쿼리 (해상도에 반응하기) */
+/* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
+@media screen and (max-width:640px) {
+    #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .board_border{
+        display: none;
+    }
+
+    .board_border_app{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    }
+
+    .board_list_wrap_app{
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #999;
+    padding: 0 30px;
+    }
+    
+    #board_list_app_top01{
+        border-top: 1px solid #999;
+        margin-top: 8px;
+    }
+
+    .board_list_app{
+        border-bottom: 1px solid #999;
+    }
+    .board_lis_appt a{  
+        color: #999;
+    }
+    
+    .board_list_app{
+        width: 100%;      
+    }
+    .board_list_app p{
+        padding: 10px;
+        color: #999;     
+    }
+
+    .content_bottom_wrap .content_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #footer_info{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
+}
+
 
 
 </style>
@@ -391,7 +458,7 @@ caption{
                         </tr>
                         <tr>
                             <td>237</td>
-                            <td><a href="">복고복고 이현승가수님 화이팅입니다~</a></td>
+                            <td><a href="">복고복고 이현승가수님 화이팅입니다~🥰</a></td>
                             <td>어느날</td>
                             <td>16</td>
                             <td>2020.08.07</td>
@@ -420,7 +487,7 @@ caption{
                         </tr>
                         <tr>
                             <td>232</td>
-                            <td><a href="">(복고복고) 박성형 가수 "꽃길인생" 노래 응원합니다~~</a></td>
+                            <td><a href="">(복고복고) 박성형 가수 "꽃길인생" 노래 응원합니다~~♡♡♡</a></td>
                             <td>용인포돌이</td>
                             <td>29</td>
                             <td>2020.08.03</td>
@@ -460,6 +527,60 @@ caption{
                 
             </article>
 
+            <article class="board_border_app">
+                <div id="board_list_wrap_app">
+                    <div class="board_list_app" id="board_list_app_top01">
+                        <a href=""><p>(오로빌)오로빌님, 반가워요!</p></a>
+                        <p>라디오 / 조회수 28 / 2020.08.09</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>복고복고 이현승가수님 화이팅입니다~🥰</p></a>
+                        <p>어느날 / 조회수 17 / 2020.08.07</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[오색오감] 전디님ㅎ오랜만이에요~^^</p></a>
+                        <p>이호영 / 조회수 30 / 2020.08.04</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>(복고복고) 모두 빠져봅시다</p></a>
+                        <p>용인포돌이 / 조회수 39 / 2020.08.03</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>(복고복고) 마포FM 청취자분들 꽃길만 걸으세요</p></a>
+                        <p>용인포돌이 / 조회수 51 / 2020.08.03</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>(복고복고) 박성현 가수 "꽃길인생" 노래 응원합니다~~♡♡♡</p></a>
+                        <p>용인포돌이 / 조회수 30 / 2020.08.03</p>
+                    </div>
+                    <div class="board_list_app">
+                        <a href=""><p>꽃길인생 넘 좋아요~~</p></a>
+                        <p>용인포돌이 / 조회수 0 / 2020.08.03</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[복고복고] 기다려지는 심다은에 복고복고방송시간</p></a>
+                        <p>이일권 / 조회수 27 / 2020.07.28</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[마포속으로]서영은 웃는거야 신청합니다</p></a>
+                        <p>유현우 / 조회수 65 / 2020.07.23</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[복고복고] 심다은</p></a>
+                        <p>이일권 / 조회수 67 / 2020.07.21</p>
+                    </div>
+                </div>
+                
+            </article>
+
             <div class="content_bottom_wrap">
                 <div class="content_bottom">
                     <form id="form_search" action="./login.php" method="POST">
@@ -476,9 +597,9 @@ caption{
                 
                 <a href="#" class="numon">1</a>
                 <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
                 <a href="#" class="num">4</a>
                 <a href="#" class="num">5</a>
-                <a href="#" class="num">6</a>
                 
             </div>
 
