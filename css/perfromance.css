@@ -1,13 +1,19 @@
 header{
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 10;
     display: flex;
     display: -ms-flexbox;
 }
 
-header #logo img{
+header #logo{
     max-width: 120px;
     min-width: 80px;
+}
+
+header #logo img{
+    width: 80%;
+    text-align: center;
 }
 
 header #menu{
@@ -17,7 +23,8 @@ header #menu{
 }
 
 header #menu li{
-    float: right;
+    margin-right: 10px;
+
 }
 
 header #menu a:hover{
