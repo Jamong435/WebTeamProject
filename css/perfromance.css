@@ -1,14 +1,8 @@
-.logo{width: 120px; }
-
-.menu_line ul{list-style-type: none;}
-.menu_line ul a{text-decoration: none;}
-
-.menu_line{
+header{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.sub_menu{
-    
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
 }
