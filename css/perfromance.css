@@ -16,11 +16,16 @@ header #menu{
     display: -ms-flexbox;
 }
 
-header #menu a:hover{
+header #menu li{
+    float: right;
+}
 
+header #menu a:hover{
+    
 }
 
 header #menu .hide{
+    display: none;
 }
 
 header #menu ul{
