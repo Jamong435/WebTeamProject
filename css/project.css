@@ -12,8 +12,14 @@ a {
 
 }
 
-
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .navbar {
+    max-width: 1040px;
+    min-width: 640px;
     display: flex;
     align-items: stretch;
     width: 100%;
