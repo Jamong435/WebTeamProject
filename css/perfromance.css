@@ -1,32 +1,28 @@
 header{
+    position: fixed;
+    z-index: 10;
     display: flex;
     display: -ms-flexbox;
-    justify-content: space-between;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -ms-flex-align: center;
+}
+
+header #logo img{
+    max-width: 120px;
+    min-width: 80px;
+}
+
+header #menu{
     list-style-type: none;
-}
-
-header .logo{
-    width: 40px;
-}
-
-header .sub_menu{
-    list-style-type: none;
-    visibility: hidden;
-}
-
-.body_item img{
-    width: 120px;
-}
-
-.bottom_menu{
     display: flex;
     display: -ms-flexbox;
-    justify-content: space-between;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -ms-flex-align: center;
+}
+
+header #menu a:hover{
+
+}
+
+header #menu .hide{
+}
+
+header #menu ul{
     list-style-type: none;
 }
