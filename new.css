@@ -1,6 +1,7 @@
-* {
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
+    background-color: white;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -8,75 +9,14 @@ a {
     font-size: 15px;
     color: black;
     text-decoration: none;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
 
 }
 
-.header {
-    width: 100% !important;
-    height: auto;
-    max-height: 80em;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    letter-spacing: 7px;
-    z-index: 1;
-    margin-bottom: -30px;
-}
-
-#content {
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    top: 600px;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    min-width: 150px;
-   
-   
-   
-}
-#wrap_content{
-    width: 100%;
-    flex-wrap: nowrap;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 15px 0px;
-    background-color: whitesmoke;
-
-}
-
-
-#content_menu img{
-   min-width: 200px;
-   padding: 10px;
-}
-
-/* .wrap_navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 33;
-    position: fixed;
-} */
 
 .navbar {
-    z-index: 6;
     display: flex;
-    width: 1060px;
-    max-width: 100em;
+    align-items: stretch;
+    width: 100%;
     background-color: transparent;
 
 }
@@ -85,7 +25,6 @@ body {
     font-size: 25px;
     color: white;
     padding: 30px;
-    right: 50px;
     align-items: center;
     /* 고유한 크기를 유지하기위해 */
     flex-grow: 2;
@@ -98,6 +37,7 @@ body {
     display: flex;
     align-items: center;
     list-style: none;
+    margin: 0;
     margin-right: 1em;
     /* 항상비율을 유지하는 flex basis */
     flex-basis: 420px;
@@ -111,9 +51,36 @@ body {
 
 }
 
-.mySlides {
-    display: none;
+header {
+    background-color: white;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+
 }
+
+#notifytext {
+    color: rgb(25, 88, 135);
+    font-size: 15px;
+    margin: -7px;
+}
+
+#notifysmall{
+    color: #333333;
+   font-size: 14px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .navbar_menu {
+        display: none;
+    }
+}
+
 
 .footer{
     width: 100%;

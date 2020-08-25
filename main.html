@@ -14,18 +14,88 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div>
             <img class="mySlides" src="./image/img_main_slide_01.jpg"
                 style="width:100%; min-width: 1000px; ">
                 <div class="mySlides" style="width:100%; min-width: 1500px;  height: 1000px; background: url(./image/img_main_slide_02.jpg);">
-                <div id="content_shall_we_radio" >SHALL WE RADIO?</div>
-                <div id="content_on_air_button"><a href="http://plive.podbbang.com/mapofm_app.mp3" target="_blank">ON AIR</a></div>
+                <div id="content_on_air_button"><a href="http://plive.podbbang.com/mapofm_app.mp3" target="_blank">빠바밤</a></div>
             </div>
-    
+            
+    </header> -->
 
+    <header class="header">
+        <div>
+               <img class="mySlides" src="./image/img_main_slide_02.jpg"
+                style="width:100%; min-width: 1500px; ">
+                
+                
+                <div class="mySlides" 
+                 style="
+                 position: relative;
+                 width:100%; 
+                 background-size: cover;
+                 height: 1000px;
+                 background-image: url(./image/img_main_slide_01.jpg);">
 
+                <h2 style=" position: absolute;
+                top:30%;
+                left:50%;
+                transform: translate(-50%, -80%);                                                                   
+                font-size:5rem;
+                color: white;
+                z-index: 2;
+                letter-spacing: 5px;
+                text-align: center;">Shall WE RADIO?</h2>
+                <div id="content_on_air_button"
+                ><a href="http://plive.podbbang.com/mapofm_app.mp3" target="_blank">ON AIR</a></div>
+            </div>
+            
     </header>
+
+
+    <style>
+        #content_on_air_button{
+    background-color: #FF6868;
+    
+    border-radius: 3px;
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    right: 50%;
+    font-weight: bold;
+    padding: 1em 0em;
+    margin: 30px 0px 10px;
+}
+#content_on_air_button a{
+    color: white;
+    padding: 20px;
+    letter-spacing: -0.2px;
+    
+}
+
+
+
+        #go{
+           display: inline-block; 
+           position: relative;
+           top: 30px;
+           background-image: url(./image/img_main_headset.jpg); 
+           width: 200px;
+           height: 130px; 
+           background-size: cover;
+           color: white;
+          
+        }
+        #go p{
+        
+           margin-top: 60px;
+           font-size: 35px;
+           color: whitesmoke;
+        
+           
+        }
+    </style>
 
 
     <div class="wrap_navbar">
@@ -50,18 +120,68 @@
 
 
     <div id="content">
+        <div id="wrap_content">
         <div id="content_menu">
         
-        <img src="./image/img_main_ipone_down.jpg" alt="" width="150px"height="150px">
-        <img src="./image/img_main_headset.jpg" alt="" width="150px"height="150px">
-        <img src="./image/img_main_today_mapo.jpg" alt="" width="150px"height="150px">
-        <img src="./image/img_main_recruitment.jpg" alt="" width="150px"height="150px">
-       </div>
+        <img src="./image/img_main_ipone_down.jpg" alt="" width="170px"height="150px">
+        <div id="go" ><p>청취 방법</p></div>
+        <img src="./image/img_main_today_mapo.jpg" alt="" width="170px"height="150px">
+        <img src="./image/img_main_recruitment.jpg" alt="" width="170px"height="150px">
+       
 
        <hr style="background-color: black; font-weight: bold;">
+       <h1>메인 프로그램</h1>
        <hr style="background-color: black; font-weight: bold;">
-    
+       
+       <div>
+       <img src="./image/img_main_program_01.jpg" alt="" width="170px"height="150px">
+       <img src="./image/img_main_program_02.jpg" alt="" width="170px"height="150px">
+       <img src="./image/img_main_program_03.jpg" alt="" width="170px"height="150px">
+       <img src="./image/img_main_program_04.jpg" alt="" width="170px"height="150px">
     </div>
+    <div>
+       <img src="./image/img_main_program_05.jpg" alt="" width="170px"height="150px">
+       <img src="./image/img_main_program_06.jpg" alt="" width="170px"height="150px">
+       <img src="./image/img_main_program_07.jpg" alt="" width="170px"height="150px">
+       <img src="./image/img_main_program_08.jpg" alt="" width="170px"height="150px">
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <!-- 전화, 메세지, 페이스북, 인스타그램 등등의 아이콘들 24 24크기 -->
+            <div class=""></div>
+            <!-- footer 메뉴  -->
+            <div id="footer_menu">
+                <ul>
+                    <li>
+                        <a href="">제보하기</a>
+                    </li>
+
+                    <li>
+                        <a href="">이용약관</a>
+                    </li>
+
+                    <li>
+                        <a href="">개인정보처리방침</a>
+                    </li>
+
+                    <li>
+                        <a href="">사업자정보확인</a>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+            <!-- 상호... 등등 -->
+            <div id="footer_info">
+                <p class="footer_info">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
+                <p class="footer_info">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
+                <br><br>
+                <p class="footer_info">Copyright © (사)마포공동체라디오. All Rights Reserved.</p>
+            </div>
+        </div> 
+    </footer>
 
 
     <script>
@@ -79,7 +199,7 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 2 seconds
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
 
     </script>
