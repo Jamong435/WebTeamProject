@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>마포FM</title>
         <link rel="stylesheet" href="./css/header_footer.css">
+        <link rel="stylesheet" href="./css/boardLineup.css">
 
         <script src="https://kit.fontawesome.com/90000e539c.js" crossorigin="anonymous"></script>
 
@@ -43,11 +44,11 @@
                         <li class="menu_sub_page">
                             <a class="top_menu_text">사업</a>
                             <ul id="menu_sub_text">
-                                <li><a href="">라디오 광고</a></li>
-                                <li><a href="">라디오PD교실</a></li>
-                                <li><a href="">삼해주</a></li>
-                                <li><a href="">달려라!디오</a></li>
-                                <li><a href="">공동체라디오 컨설팅</a></li>
+                                <li><a href="./ad.html">라디오 광고</a></li>
+                                <li><a href="./radioPDschool.html">라디오PD교실</a></li>
+                                <li><a href="./samhaejoo.html">삼해주</a></li>
+                                <li><a href="./runradio.html">달려라!디오</a></li>
+                                <li><a href="./consulting.html">공동체라디오 컨설팅</a></li>
                             </ul>
                         </li>
                         <li class="menu_sub_page">
@@ -90,30 +91,37 @@
             <div id="input_area">
                 
                 <div id="title_area">
-                    <span class="input_titles">제목</span><br>
-                    <input class="input_text" id="block" type="text">
+                    <span class="input_titles">제목</span>
+                    <input id="block" type="text">
                 </div>
 
-                <div id="writer">
-                    <span class="input_titles">글쓴이</span><br>
-                    <input class="input_flex" type="text">
+                
+                <div class="row_area">
+                    <div id="writer">
+                        <span class="input_titles">글쓴이</span>
+                        <input class="input_flex" type="text">
+                    </div>
+                    
+                    <!-- 유효성검사적용해보기 -->
+                    <div id="email">
+                        <span class="input_titles">이메일</span>
+                        <input class="input_flex" type="text">
+                    </div>
                 </div>
                 
-                <!-- 유효성검사적용해보기 -->
-                <div id="email">
-                    <span class="input_titles">이메일</span><br>
-                    <input class="input_flex" type="text">
-                </div>
 
-                <div id="password">
-                    <span class="input_titles">비밀번호</span><br>
-                    <input class="input_flex" type="password">
+                <div class="row_area">
+                    <div id="password">
+                        <span class="input_titles">비밀번호</span>
+                        <input class="input_flex" type="password">
+                    </div>
+    
+                    <div id="password_check">
+                        <span class="input_titles">비밀번호 확인</span>
+                        <input class="input_flex" type="password">
+                    </div>
                 </div>
-
-                <div id="password_check">
-                    <span class="input_titles">비밀번호 확인</span><br>
-                    <input class="input_flex" type="password">
-                </div>
+                
 
                 <!-- checkbox -->
                 <div id="checkBox_area">
@@ -123,8 +131,22 @@
 
                 <div id="icon_area">
                     <!-- 모두선택함수 -->
-                    <span id="icon_paper_all"><i class="far fa-newspaper" onclick="selectAll()"></i></span>
-                    <div id="fontSize_icon"><span id="nomFont16">16</span><i class="fas fa-caret-down"></i></div>
+                    <!-- <span id="icon_paper_all"><i class="far fa-newspaper" onclick="selectAll()"></i></span>
+                    <div id="fontSize_icon"><span id="nomFont16">16</span><i class="fas fa-caret-down"></i></div> -->
+
+                    <!-- 시간없어서 이미지로....  -->
+                    <div id="textInput_area">
+                        <img id="icon_img" src="./image/img_boardLineup_page/icon_img.png" alt="icon_img">
+                        <textarea id="input_textarea"></textarea>
+                    </div>
+
+                    <!-- 반응형으로 줄이면 사진추가 부분나옴 -->
+
+                    <!-- 버튼2개 -->
+                    <div id="button_area">
+                        <button id="history_btn" class="btn_padding">목록으로 가기</button>
+                        <button id="save_btn" class="btn_padding">저장하기</button>
+                    </div>
                     
                     
                 </div>
