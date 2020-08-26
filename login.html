@@ -15,25 +15,77 @@
 
 <body>
 
-    <div class="wrapper" style="position: sticky; top: 0;">
-        <nav class="navbar">
-            <div class="navbar_logo">
-                <img class="site-logo" src="//contents.sixshop.com/uploadedFiles/53441/default/image_1519714732215.png"
-                    width="120" height="40">
+    <header class="header">
+        <div class="header_wrapper">
+             <!-- main logo -->
+        <div id="logo">
+            <a class="logo" href="./index.html"> <img class="logo" src="./image/img_top_main_mapoFM.png" alt="마포FM"> </a>
+        </div>
 
+        <!-- main menu -->
+        <nav class="nav">
+            <div id="main_menu">
+                <ul>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">소개</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">마포FM?</a></li>
+                            <li><a href="">후원</a></li>
+                            <li><a href="">오시는 길</a></li>
+                            <li><a href="">4층 사람들</a></li>
+                            <li><a href="">굿즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text menu_page_blue">라디오</a>
+                        <ul id="menu_sub_text">
+                            <li class="sub_menu_page"><a class="menu_page_blue" href="./djbox.html">사연과 신청곡</a></li>
+                            <li><a href="./program.html">프로그램 소개</a></li>
+                            <li><a href="./timetable.html">편성표</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">사업</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">라디오 광고</a></li>
+                            <li><a href="">라디오PD교실</a></li>
+                            <li><a href="">삼해주</a></li>
+                            <li><a href="">달려라!디오</a></li>
+                            <li><a href="">공동체라디오 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">커뮤니티</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">뉴스레터</a></li>
+                            <li><a href="">마포소식</a></li>
+                            <li><a href="">증명서 신청</a></li>
+                            <li><a href="">공유자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">대관/행사</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">공연 / 강의</a></li>
+                            <li><a href="">PLUTO (플루토)</a></li>
+                            <li><a href="">스튜디오 대관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul> 
             </div>
-
-            <ul class="navbar_menu">
-                <li><a href="">소개</a></li>
-                <li><a href="">라디오</a></li>
-                <li><a href="">사업</a></li>
-                <li><a href="" style="color: teal;">커뮤니티</a></li>
-                <li><a href="">대관/행사</a></li>
-                <li><a href=""><i class="fas fa-user"></i></a></li>
-                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>
         </nav>
-    </div>
+
+        </div>
+       
+    </header>
+
 
 
 
@@ -41,7 +93,7 @@
         <div id="login">
             <p>로그인</p>
 
-            <form action="./Login.php" method="POST">
+            <form action="./php/Login.php" method="POST">
                 <label for="in">아이디 또는 이메일</label>
                 <input type="text" id="in" name="userID">
                 <br>

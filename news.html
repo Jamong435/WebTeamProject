@@ -15,101 +15,98 @@
 
 <body>
 
-    <div class="wrapper"style="position: sticky; top: 0;">
-        <nav class="navbar" >
-          <div class="navbar_logo">
-              <img class="site-logo" src="//contents.sixshop.com/uploadedFiles/53441/default/image_1519714732215.png"
-                  width="120" height="40">
-  
-          </div>
-  
-          <ul class="navbar_menu">
-              <li><a href="">소개</a></li>
-              <li><a href="">라디오</a></li>
-              <li><a href="">사업</a></li>
-              <li><select href="" style="color: teal;"><option>커뮤니티</option>
-                <option>옵션2</option>
-                <option>옵션3</option></select></li>
-  
-                
-              </select>
-              
-              <li><a href="">대관/행사</a></li>
-              <li><a href=""><i class="fas fa-user"></i></a></li>
-              <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-          </ul>
-      </nav>
-     </div>
+    <header class="header">
+        <div class="header_wrapper">
+             <!-- main logo -->
+        <div id="logo">
+            <a class="logo" href="./index.html"> <img class="logo" src="./image/img_top_main_mapoFM.png" alt="마포FM"> </a>
+        </div>
 
-     <style>
-         
-select {
-  width: 100px;
-  padding: .8em .5em;
-  font-family: inherit;
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0px ;
-  border-radius: 0px;
-}
+        <!-- main menu -->
+        <nav class="nav">
+            <div id="main_menu">
+                <ul>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">소개</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">마포FM?</a></li>
+                            <li><a href="">후원</a></li>
+                            <li><a href="">오시는 길</a></li>
+                            <li><a href="">4층 사람들</a></li>
+                            <li><a href="">굿즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text menu_page_blue">라디오</a>
+                        <ul id="menu_sub_text">
+                            <li class="sub_menu_page"><a class="menu_page_blue" href="./djbox.html">사연과 신청곡</a></li>
+                            <li><a href="./program.html">프로그램 소개</a></li>
+                            <li><a href="./timetable.html">편성표</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">사업</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">라디오 광고</a></li>
+                            <li><a href="">라디오PD교실</a></li>
+                            <li><a href="">삼해주</a></li>
+                            <li><a href="">달려라!디오</a></li>
+                            <li><a href="">공동체라디오 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">커뮤니티</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">뉴스레터</a></li>
+                            <li><a href="">마포소식</a></li>
+                            <li><a href="">증명서 신청</a></li>
+                            <li><a href="">공유자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page">
+                        <a class="top_menu_text">대관/행사</a>
+                        <ul id="menu_sub_text">
+                            <li><a href="">공연 / 강의</a></li>
+                            <li><a href="">PLUTO (플루토)</a></li>
+                            <li><a href="">스튜디오 대관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul> 
+            </div>
+        </nav>
 
-select::-ms-expand {
-  /* for IE 11 */
-  display: none;{opacity: 0;}
-}
-     </style>
+        </div>
        
+    </header>
+
+    
      
 
 
-    <header>
+    <div class="wrapper_notify">
         <div id="notify">
             <p id="notifytext">마포FM의 월간 뉴스레터</p>
             <p id="notifysmall">보고 싶은 달을 클릭하면,소식지를 바로 확인할수있습니다</p>
         </div>
 
-    </header>
-
-    <div id="news_wrapper">
-        <div class="th">
-
-            <img src="image/image_news.jpg" alt="">
-
-            <img src="image/img_news_page/image_news.jpg" alt="">
-
-        </div>
     </div>
 
+            <div id="news_wrapper">
+                <div class="th">
 
-    <style>
-        .news_wrapper{
-            display: flex;
-            justify-content: left;
-            width: 100%;
-        }
+                    <img src="image/image_news.jpg" alt="">
 
-        .th{
-            display: flex;
-            justify-content: space-around;
-            justify-content: left;
-            margin-left: 20%;
-            height: 350px;
-        }
-        
-        .th img{
-        max-width: 80%;
-        min-width: 170px;
-        max-height: 200px;
-        background-size: cover;
-        }
-    </style>
+                    <img src="image/img_news_page/image_news.jpg" alt="">
 
-    
-
-
-          
+                </div>
+            </div>
 
         </div>
     </div>
