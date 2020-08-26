@@ -8,6 +8,8 @@
 ul{list-style-type: none;}
 a{text-decoration: none;}
 
+/* ========================================================================================== */
+
 /* 추가 해당 페이지의 필요한 부분 */
 .header #main_menu .menu_djbox_page .menu_djbox_page_blue, .sub_menu_djbox_page{
     color: #195887;
@@ -48,6 +50,8 @@ a{text-decoration: none;}
 .header #main_menu .menu_djbox_page:hover #menu_sub_text, #menu_sub_text:hover{
     display: block;
 }
+
+/* ============================================================================================== */
 
 /* ========================================================================================== */
 
