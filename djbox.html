@@ -15,9 +15,7 @@
 
         <link rel="stylesheet" href="./css/djbox.css">
 
-    <style>
-
-</style>
+        <script src="./js/header_footer.js"></script>
 
     </head>
     <body>
@@ -87,10 +85,197 @@
                     </ul> 
                 </div>
             </nav>
-
-            </div>
            
         </header>
+
+        <!-- ---------------------------------------------------------------------- -->
+
+        <script>
+            // function show_mobile_menu(){
+            //     var showMobileMenu =  document.getElementById('show_mobile_menu');
+            //     var spacer = document.getElementById('show_mobile_menu_space');
+            //     if( showMobileMenu.className == 'display_none' ) {
+            //         showMobileMenu.className = 'display_block';
+            //         spacer.className = 'display_block';
+            //     } else if( showMobileMenu.className == 'display_block' ) {
+            //         showMobileMenu.className = 'display_none';
+            //         spacer.className = 'display_none';
+            //     }
+            // }
+
+            // function show_mobile_out_touch(){
+            //     var showMobileMenu =  document.getElementById('show_mobile_menu');
+            //     var spacer = document.getElementById('show_mobile_menu_space');
+            //     if( showMobileMenu.className == 'display_none' ) {
+            //         showMobileMenu.className = 'display_block';
+            //         spacer.className = 'display_block';
+            //     } else if( showMobileMenu.className == 'display_block' ) {
+            //         showMobileMenu.className = 'display_none';
+            //         spacer.className = 'display_none';
+            //     }
+            // }
+
+            // var clicked01 = true;
+            // var clicked02 = true;
+            // var clicked03 = true;
+            // var clicked04 = true;
+            // var clicked05 = true;
+
+            // function show_sub_menu01() {
+                
+            //     var showMobileSubMenu01 = document.getElementById('menu_sub_text_mobile01');
+
+            //     if( showMobileSubMenu01.className == 'menu_sub_text_mobile display_none' && clicked01 ){
+            //         showMobileSubMenu01.className = 'menu_sub_text_mobile display_block';
+            //         clicked01 = false;
+            //     } else if( showMobileSubMenu01.className == 'menu_sub_text_mobile display_block' && !clicked01 ){
+            //         showMobileSubMenu01.className = 'menu_sub_text_mobile display_none';
+            //         clicked01 = true;
+            //     }
+            // }
+
+            // function show_sub_menu02() {
+                
+            //     var showMobileSubMenu02 = document.getElementById('menu_sub_text_mobile02');
+
+            //     if( showMobileSubMenu02.className == 'menu_sub_text_mobile display_none' && clicked02  ) {
+            //         showMobileSubMenu02.className = 'menu_sub_text_mobile display_block';
+            //         clicked02 = false;
+            //     } else if( showMobileSubMenu02.className == 'menu_sub_text_mobile display_block' && !clicked02 ){
+            //         showMobileSubMenu02.className = 'menu_sub_text_mobile display_none';
+            //         clicked02 = true;
+            //     }
+            // }
+
+            // function show_sub_menu03() {
+                
+            //     var showMobileSubMenu03 = document.getElementById('menu_sub_text_mobile03');
+
+            //     if( showMobileSubMenu03.className == 'menu_sub_text_mobile display_none' && clicked03  ) {
+            //         showMobileSubMenu03.className = 'menu_sub_text_mobile display_block';
+            //         clicked03 = false;
+            //     } else if( showMobileSubMenu03.className == 'menu_sub_text_mobile display_block' && !clicked03 ){
+            //         showMobileSubMenu03.className = 'menu_sub_text_mobile display_none';
+            //         clicked03 = true;
+            //     }
+            // }
+
+            // function show_sub_menu04() {
+                
+            //     var showMobileSubMenu04 = document.getElementById('menu_sub_text_mobile04');
+
+            //     if( showMobileSubMenu04.className == 'menu_sub_text_mobile display_none' && clicked04  ) {
+            //         showMobileSubMenu04.className = 'menu_sub_text_mobile display_block';
+            //         clicked04 = false;
+            //     } else if( showMobileSubMenu04.className == 'menu_sub_text_mobile display_block' && !clicked04 ){
+            //         showMobileSubMenu04.className = 'menu_sub_text_mobile display_none';
+            //         clicked04 = true;
+            //     }
+            // }
+
+            // function show_sub_menu05() {
+                
+            //     var showMobileSubMenu05 = document.getElementById('menu_sub_text_mobile05');
+
+            //     if( showMobileSubMenu05.className == 'menu_sub_text_mobile display_none' && clicked05  ) {
+            //         showMobileSubMenu05.className = 'menu_sub_text_mobile display_block';
+            //         clicked05 = false;
+            //     } else if( showMobileSubMenu05.className == 'menu_sub_text_mobile display_block' && !clicked05 ){
+            //         showMobileSubMenu05.className = 'menu_sub_text_mobile display_none';
+            //         clicked05 = true;
+            //     }
+            // }
+        </script>
+
+        <!-- ----------------------------------------------------------------------- -->
+
+        <!-- header -> 모바일 용 -->
+        <header class="header_mobile">
+            <div class="header_wrapper_mobile">
+
+                <!-- 햄버거 모양 -->
+                <div id="menu_mobile_hambager" onclick="show_mobile_menu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- main logo -->
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="shop_cart_mobile">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+           
+        </header>
+
+        <div id="show_mobile_menu" class="display_none">
+            <div class="show_mobile_menu_01">
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="login_mobile">
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+
+            <div style="height: 2em;"></div>
+
+            <div class="show_mobile_menu_02">
+                <ul>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu01()">소개</a>
+                        <ul id="menu_sub_text_mobile01" class="menu_sub_text_mobile display_none">
+                            <li><a href="">마포FM?</a></li>
+                            <li><a href="">후원</a></li>
+                            <li><a href="">오시는 길</a></li>
+                            <li><a href="">4층 사람들</a></li>
+                            <li><a href="">굿즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu02()">라디오</a>
+                        <ul id="menu_sub_text_mobile02" class="menu_sub_text_mobile display_none">
+                            <li><a href="./djbox.html">사연과 신청곡</a></li>
+                            <li><a href="./program.html">프로그램 소개</a></li>
+                            <li><a href="./timetable.html">편성표</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu03()">사업</a>
+                        <ul id="menu_sub_text_mobile03" class="menu_sub_text_mobile display_none">
+                            <li><a href="">라디오 광고</a></li>
+                            <li><a href="">라디오PD교실</a></li>
+                            <li><a href="">삼해주</a></li>
+                            <li><a href="">달려라!디오</a></li>
+                            <li><a href="">공동체라디오 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu04()">커뮤니티</a>
+                        <ul id="menu_sub_text_mobile04" class="menu_sub_text_mobile display_none">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">뉴스레터</a></li>
+                            <li><a href="">마포소식</a></li>
+                            <li><a href="">증명서 신청</a></li>
+                            <li><a href="">공유자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu05()">대관/행사</a>
+                        <ul id="menu_sub_text_mobile05" class="menu_sub_text_mobile display_none">
+                            <li><a href="">공연 / 강의</a></li>
+                            <li><a href="">PLUTO (플루토)</a></li>
+                            <li><a href="">스튜디오 대관</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="show_mobile_menu_space" onclick="show_mobile_out_touch()" class="display_none"></div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
 
         <section class="content_radio_back_img">
             <article class="content_top_image">
