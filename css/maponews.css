@@ -263,11 +263,38 @@ td {
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#button{
+    border: 0; padding: 45px; margin-top: 50px; background-color:  rgb(25, 88, 135); font-weight: bold;font-size: 30px; color: white;
+}
 
 /* 반응형 웹 (RWD) */
 /* 미디어 쿼리 (해상도에 반응하기) */
 /* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
 @media screen and (max-width:640px) {
+    #button{
+        padding: 12px;
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .board_list_wrap{
+        width: 420px;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .borad_border{
+      width: 100%;
+    }
+    .board_list tbody{
+        /* 글씨안넘어가게 */
+        
+        word-break: keep-all;
+        word-wrap: normal;
+       
+    }
+
     #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
         flex-direction: column;
         align-items: center;

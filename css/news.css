@@ -91,12 +91,13 @@ background-size: cover;
 #notifytext {
     color: rgb(25, 88, 135);
     font-size: 15px;
-    margin: -7px;
+   
 }
 
 #notifysmall{
     color: #333333;
    font-size: 14px;
+   padding-bottom: 30px;
 }
 
 
@@ -296,6 +297,9 @@ a{text-decoration: none;}
 
     #footer_info .footer_info{
         word-break: break-all;
+    }
+    #news_wrapper{
+        width:10%;
     }
 }
 

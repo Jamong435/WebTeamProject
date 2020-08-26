@@ -73,7 +73,7 @@ a{text-decoration: none;}
 
 /* 추가 해당 페이지의 필요한 부분 */
 .header #main_menu .menu_sub_page .menu_page_blue, .sub_menu_page{
-    color: #195887;
+    
     margin-right: 1em;
     text-align: center;
     font-weight: bold;
