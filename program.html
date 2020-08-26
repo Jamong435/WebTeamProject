@@ -171,7 +171,6 @@
             }
 
             .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory{
-                /* flex-flow: 5; */
                 width: 50%;
                 padding: 0px 20px;
                 margin: 0px 4px 0px 0px;
@@ -179,13 +178,11 @@
 
             .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory{
                 width: 50%;
-                /* flex-flow: 5; */
                 padding: 0px 20px;
                 margin: 0px 4px 0px 0px;
             }
 
             .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory{
-                /* flex-flow: 5; */
                 width: 50%;
                 padding: 0px 20px;
                 margin: 0px 4px 0px 0px;
@@ -193,7 +190,6 @@
 
             .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
                 width: 50%;
-                /* flex-flow: 5; */
                 padding: 0px 20px;
                 margin: 0px 4px 0px 0px;
             }
@@ -334,6 +330,13 @@
                     align-items: center;
                 }
 
+                .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+                .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+                .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+                .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+                    width: 100%;
+                }
+
                 #footer_info{
                     /* display: flex;
                     flex-direction: column;
@@ -341,6 +344,23 @@
                     align-items: center; */
                 }
 
+                #footer_info .footer_info{
+                    word-break: break-all;
+                }
+            }
+
+            @media screen and (max-width:320px){
+
+                .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+                .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+                .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+                .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+                    width: 100%;
+                }
+
+                .footer #footer_menu ul{
+                    flex-direction: column;
+                }
                 #footer_info .footer_info{
                     word-break: break-all;
                 }
@@ -354,7 +374,7 @@
             <div class="header_wrapper">
                  <!-- main logo -->
             <div id="logo">
-                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_main_home_page/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
             </div>
 
             <!-- main menu -->
@@ -470,7 +490,7 @@
                         </div>
     
                         <div class="wrapper">
-                            <img src="./image/img_radio_page/raidio_rainbow_people.png" alt="">
+                            <img src="./image/img_program_page/raidio_rainbow_people.png" alt="">
                         </div>
     
                         <div class="wrapper">
@@ -500,7 +520,7 @@
                         </div>
 
                         <div class="wrapper">
-                            <img src="./image/img_radio_page/img_radio_program_music_diving01.jpg" alt="">
+                            <img src="./image/img_program_page/img_radio_program_music_diving01.jpg" alt="">
                         </div>
     
                         <div class="wrapper">
@@ -526,7 +546,7 @@
                         </div>
 
                         <div class="wrapper">
-                            <img src="./image/img_radio_page/img_radio_program_music_diving02.jpg" alt="">
+                            <img src="./image/img_program_page/img_radio_program_music_diving02.jpg" alt="">
                         </div>
     
                         <div class="wrapper">
@@ -598,7 +618,7 @@
                         </div>
 
                         <div class="wrapper">
-                            <img src="./image/img_radio_page/raidio_rainbow_people.png" alt="">
+                            <img src="./image/img_program_page/raidio_rainbow_people.png" alt="">
                         </div>
                         <br>
                     </div>
@@ -821,7 +841,7 @@
                         </div>
 
                         <div class="wrapper">
-                            <img src="./image/img_radio_page/img_radio_program_wise_radio01.jpg" alt="">
+                            <img src="./image/img_program_page/img_radio_program_wise_radio01.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -905,7 +925,7 @@
                         </div>
     
                         <div class="wrapper">
-                            <img src="./image/img_radio_page/img_radio_program_funny_radio01.jpg" alt="">
+                            <img src="./image/img_program_page/img_radio_program_funny_radio01.jpg" alt="">
                         </div>
                         <br>
                     </div>

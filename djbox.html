@@ -108,7 +108,7 @@ a{text-decoration: none;}
 /* 라디오 사연쓰기 이미지 */
 .content_top_image #content_radio_img{
     position: fixed;
-    background-image: url('./image/img_radio_page/img_radio_page01_mic.jpg');
+    background-image: url('./image/img_djbox_page/img_radio_page01_mic.jpg');
     width: 100%;
     height: 640px;
     background-size: cover;
@@ -379,7 +379,14 @@ caption{
     }
 }
 
-
+@media screen and (max-width:320px){
+    .footer #footer_menu ul{
+        flex-direction: column;
+    }
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
+}
 
 </style>
 
@@ -389,7 +396,7 @@ caption{
             <div class="header_wrapper">
                  <!-- main logo -->
             <div id="logo">
-                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_main_home_page/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
             </div>
 
             <!-- main menu -->
