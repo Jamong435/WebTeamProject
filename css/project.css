@@ -67,9 +67,9 @@ header {
 
 }
 
-header div strong {
+header div strong{
     color: rgb(25, 88, 135);
-    font-size: 30px;
+    font-size: 33px;
     display: inline-block;
     padding-bottom: 30px;
 }
