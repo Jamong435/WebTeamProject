@@ -60,14 +60,37 @@ a {
     height: 800px;
     display: flex;
     justify-content: center;
-    background-color: tomato;
+    
 }
 #login{
     height: 800px;
     width: 500px;
     background-color: white;
+    
 }
-
+#login p{
+ color: rgb(19, 226, 19);
+ font-size: 20px;
+}
+#login label{
+    display: block;
+    color: grey;
+    font-size: 13px;
+    font-weight: inherit;
+}
+#login input{
+    border: 1px solid #999;
+    padding: 15px;
+    width: 450px;
+    margin: 15px;
+    
+}
+#submit{
+    background-color: tomato;
+}
+#register{
+    border: 1px solid tomato;
+}
 
 
 
