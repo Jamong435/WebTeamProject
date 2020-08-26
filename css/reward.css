@@ -1,0 +1,78 @@
+
+body{
+    margin: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: 'Nanum Gothic', Helvetica, sans-serif;
+
+    text-align: center;
+    align-content: center;
+}
+
+/* Header */
+header{
+    padding: 10px;
+}
+
+/* section */
+section{
+    margin-top: 100px;
+    padding: 100px;
+    align-content: center;
+}
+
+/* class */
+
+
+.button{
+    background-color: rgb(49, 84, 136);
+    width: 180px;
+    height: 50px;
+    color: honeydew;
+    font-weight: bold;
+
+    position: relative;
+    border: none;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+.button:hover{
+    background-color:  rgb(85, 116, 163);
+}
+
+
+
+/* footer */
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 반응형 웹 적용 (RWD) */
+/* 미디어쿼리 적용 (해상도에 반응하기) */
+/* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
+@media screen and (max-width: 640px){
+
+    body{
+        padding-left: 5%;
+        padding-right: 0%;
+    }
+
+    section{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    section img{
+        width: 500px;
+    }
+
+}
+

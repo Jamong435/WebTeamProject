@@ -1,267 +1,139 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>member</title>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> 
+        <title></title>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
-
-        <style>
-
-            *{
-                margin: 0;
-                padding: 0;
-            }
-
-            body{
-                margin: 0;
-                padding-right: 100px;
-                padding-left: 100px;
-                font-family: 'Nanum Gothic', Helvetica, sans-serif;
-
-                text-align: center;
-            }
-
-            /* Header */
-            header{
-                padding: 10px;
-            }
-
-            /* section */
-            section{
-                margin-top: 100px;
-                padding: 100px;
-                text-align: center;
-            }
-
-            
-            /* container */
-
-            #members{
-                /* border: 3px solid gold; */
-
-                margin-top: 100px;
-                display: flex;
-
-                align-items: center;
-                flex-direction: column;
-            }
-            
-            .container{
-                /* border: 2px solid hotpink; */
-
-                width: 100%;
-                height: 500px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                
-                flex-direction: row;
-
-            }
-
-
-            /* class */
-
-            article{
-                display: inline-block;
-                /* align-items: center; */
-                margin: 10px;
-
-                flex-shrink: 1;
-            }
-            
-            #member-img{
-                width: 600px;
-                height: 450px;
-
-                opacity: 80%;
-                flex-shrink: 1;
-            }
-
-            #member-img:hover{
-                opacity: 60%;
-                transition-duration: 0.3s;
-            }
-
-            article h2{
-                position: relative; bottom:150px;
-                color: ghostwhite; font-weight: bold; font-size: 2em;
-            }
-
-           article p{
-                margin-top: 30px;
-            }
-
-            .contact{
-                position: relative; bottom: 150px;
-                color: ghostwhite; font-weight: bold;
-            }
-
-
-
-         
-
-            /* footer */
-            footer{
-                padding: 20px;
-                text-align: center;
-            }
-
-
-            /* 반응형 웹 적용 (RWD) */
-            /* 미디어쿼리 적용 (해상도에 반응하기) */
-            /* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
-            @media screen and (max-width: 600px){
-
-
-                body{
-                    padding-left: 5%;
-                    padding-right: 0%;
-                }
-
-                section{
-                    padding-left: 0%;
-                    padding-right: 0%;
-                }
-
-         
-                body{
-                margin: 0;
-                padding-right: 100px;
-                padding-left: 100px;
-                font-family: 'Nanum Gothic', Helvetica, sans-serif;
-
-                text-align: center;
-            }
-
-            
-            /* container */
-
-            #members{
-                /* border: 3px solid gold; */
-
-                margin-top: 100px;
-                display: flex;
-
-                align-items: justify;
-                flex-direction: column;
-            }
-            
-            .container{
-                /* border: 2px solid hotpink; */
-
-                width: 100%;
-                height: 500px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                
-                flex-direction: row;
-
-            }
-
-
-           article p{
-                margin-top: 30px;
-            }
-
-
-           }
-
-  
-
-        </style>
+        <link rel="stylesheet" href="../WebTeamProject/css/member.css">
 
 
     </head>
 
     <body>
+        
+       <!-- Header -->
+       <header></header>
 
-   
+       <!-- Section -->
+       <section>
 
-        <!-- Header -->
-
-        <header>
-
-        </header>
-
-
-        <!-- section -->
-
-        <section>
-
-            <h1 style="color: rgb(49, 84, 136); font-size: 2em;">4층 사람들</h1>
+            <div>
+                <h1 style="text-align: center;">4층 사람들</h1>
+            </div>
 
             <br><hr style="width: 200px; margin: auto;"><br>
 
-            <div id="members">
+            <div class="container">
 
-                <div class="container">
+                <div class="row">
 
                     <article>
-                        <img id="member-img" src="https://t1.kakaocdn.net/friends/kfo-common/pcrtn/brand/thumb_emoticon3d.jpg">
-                        <h2 class="name">송덕호 방송본부장</h2>
-                        <p class="contact">dhsong@mapofm.net 070-7542-7567</p>
-    
+                        
+                        <div class="text">
+
+                            <p class="name">송덕호 방송본부장</p>
+                            <p class="contact">dhsong@mapofm.net 070-7542-7567</p>
+
+                        </div>
+
+                        <div id="frame">
+                            <img src="https://t1.kakaocdn.net/friends/kfo-common/pcrtn/brand/thumb_emoticon3d.jpg">
+                        </div>
+
                     </article>
-    
+
+                    &nbsp;&nbsp;
+
                     <article>
-                        <img id="member-img" src="https://i.ytimg.com/vi/xyZjniR39oY/maxresdefault.jpg">
-                        <h2 class="name">장지웅 PD</h2>
-                        <p class="contact">sturike89@mapofm.net 070-7542-7550</p>
-    
+
+                        <div class="text">
+                            <p class="name">장지웅 PD</p>
+                            <p class="contact">sturike89@mapofm.net 070-7542-7550</p>
+                        </div>
+
+                        <div id="frame">
+                          <img src="https://i.ytimg.com/vi/xyZjniR39oY/maxresdefault.jpg">
+                        </div>
+                        
                     </article>
-    
+
                 </div>
 
-                <div class="container">
+                <div class="row">
 
                     <article>
-                        <img id="member-img" src="https://golfshop-vx.s3.ap-northeast-2.amazonaws.com/Image-shop-vx/19FW/VBWA1AWWM0003PNKF/p01.jpg">
-                        <h2 class="name">이유진 PD</h2>
-                        <p class="contact">bezzang@mapofm.net 070-7542-7569</p>
-    
+                        
+                        <div class="text">
+                            <p class="name">이유진 PD</p>
+                            <p class="contact">bezzang@mapofm.net 070-7542-756</p>
+                        </div>
+
+                        <div id="frame">
+                          <img src="https://golfshop-vx.s3.ap-northeast-2.amazonaws.com/Image-shop-vx/19FW/VBWA1AWWM0003PNKF/p01.jpg">
+                        </div>
+
                     </article>
-    
+
+                    &nbsp;&nbsp;
+
                     <article>
-                        <img id="member-img" src="https://t1.daumcdn.net/friends/prod/category/M004_friends_frodo.jpg">
-                        <h2 class="name">배진호 PD</h2>
-                        <p class="contact">dongradio@mapofm.net 070-7542-7568</p>
-    
+                        
+                        <div class="text">
+                            <p class="name">배진호 PD</p>
+                            <p class="contact">dongradio@mapofm.net 070-7542-7568</p>
+                        </div>
+
+                        <div id="frame">
+                           <img src="https://t1.daumcdn.net/friends/prod/category/M004_friends_frodo.jpg">
+                        </div>
+
+                        
                     </article>
-    
+
                 </div>
 
-
-                <div class="container" style=" text-align: justify;">
+                <div class="row">
 
                     <article>
-                        <img id="member-img" src="https://i.pinimg.com/originals/1b/51/73/1b51731e55bd51232386fb8f8212d8a9.jpg"
-                        style="margin-left: 40px;">
-                        <h2 class="name" style="text-align: center;">이민선 PD</h2>
-                        <p class="contact" style="text-align: center;">mapoin@mapofm.net</p>
-    
+
+                        <div class="text">
+                            <p class="name">이민선 PD</p>
+                            <p class="contact">mapoin@mapofm.net</p>
+                        </div>
+
+                        <div id="frame">
+                           <img src="https://i.pinimg.com/originals/1b/51/73/1b51731e55bd51232386fb8f8212d8a9.jpg">
+                        </div>
+
+
                     </article>
 
-    
+                    &nbsp;&nbsp;
+
+                    <article>
+
+                        <div class="text">
+                            <p class="name"></p>
+                            <p class="contact"></p>
+                        </div>
+
+                        <div id="frame">
+                            <img src="https://i.pinimg.com/originals/1b/51/73/1b51731e55bd51232386fb8f8212d8a9.jpg" style="opacity: 0;">
+                        </div>
+
+
+                    </article>
+
                 </div>
 
             </div>
 
-            
-
-           
-        </section>
+       </section>
 
 
-        <!-- footer -->
-
-        <footer>
-
-            <p style="font-size: small;">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
-            <p style="font-size: small;">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
-
-        </footer>
-        
+       <!-- Footer -->
+       <footer></footer>
 
     </body>
 

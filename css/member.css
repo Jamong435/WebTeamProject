@@ -1,0 +1,142 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Nanum Gothic', Helvetica, sans-serif;
+    
+    text-align: center;
+}
+
+section{
+    text-align: center;
+}
+
+
+div h1{
+    /* color: rgb(0, 79, 170); */
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+article{
+    /* display: inline-block; */
+    position: relative;
+
+    flex-shrink: 1;
+}
+
+article:hover{
+    opacity: 70%;
+}
+
+
+.text{
+    /* border: 1px solid darkturquoise; */
+
+    position: absolute;
+    left: 15%;
+    right: 15%;
+
+}
+
+
+article img{
+    max-width: 550px;
+
+    width: 100%;
+    height: 350px
+    
+
+    /* position: relative; */
+
+}
+
+article div{
+    top: 250px;
+    left:350px;
+}
+
+.container{
+    /* border: 2px dashed red; */
+
+    width: 100%;
+    /* height: 1200px; */
+
+    display: flex;
+    flex-direction: column;
+
+    margin:0 auto; 
+    text-align: center;
+
+}
+
+#frame{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.row{
+    /* border: 3px solid rebeccapurple; */
+
+    width: 100%;
+
+    display: block;
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+
+}
+
+
+.name{
+    font-size: 1.4em;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.contact{
+    font-weight: bold;
+    color: white;
+
+}
+
+
+/* 반응형 웹 적용 (RWD) */
+/* 미디어쿼리 적용 (해상도에 반응하기) */
+/* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
+@media screen and (max-width: 640px){
+    
+    body{
+        padding-left: 5px;
+        padding-right: 5px;
+
+        text-align: justify;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media screen and (max-width: 320px){
+    
+    article{
+        width: 300px;
+    }
+    
+}
