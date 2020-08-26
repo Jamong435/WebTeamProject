@@ -30,6 +30,8 @@ a{text-decoration: none;}
     flex-grow: 2;
 }
 
+
+
 .navbar_menu {
 
     /* 줄어들때 같이 안줄어들어 아랫줄로가지않겠다 */
@@ -50,41 +52,72 @@ a{text-decoration: none;}
     padding: 40px 12px;
 
 }
+
+
+
+
 #login_wrapper{
-    height: 800px;
     display: flex;
+    height: 700px;
+    margin-bottom: -30px;
     justify-content: center;
+    align-items: center;
     
 }
 #login{
-    height: 800px;
     width: 500px;
-    background-color: white;
+    height: 600px;
+   
     
 }
 #login p{
  color: rgb(19, 226, 19);
  font-size: 20px;
+ padding: 30px;
 }
 #login label{
     display: block;
-    color: grey;
-    font-size: 13px;
+    color: #999;
+    margin-left: 15px;
+    font-size: 14px;
     font-weight: inherit;
 }
 #login input{
     border: 1px solid #999;
+    
     padding: 15px;
-    width: 450px;
+    width: 300px;
     margin: 15px;
     
+    
+}
+#loginbox{
+    margin-left: 15px;
+
 }
 #submit{
     background-color: tomato;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+#submit:hover{
+    opacity: 0.5;
 }
 #register{
-    border: 1px solid tomato;
+   position: relative;
+   border: 1px solid t;
 }
+#register:hover{
+    background: tomato;
+
+}
+#register2{
+    background-color: orange;
+    font-size: 15px;
+    color: white;
+}
+
 
 
 
