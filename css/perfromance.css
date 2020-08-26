@@ -1,51 +1,30 @@
-header{
-    position: sticky;
-    top: 0;
-    z-index: 10;
+
+
+#main #text{
+    text-align: center;
+    font-size: 15px;
+    color: #BF1A1A;
+    font-weight: bold;
+}
+
+#main .hide_line{
+    height: 2em;
+}
+
+#main #body{
     display: flex;
-    display: -ms-flexbox;
-    height: 70px;
 }
 
-header #logo{
-    max-width: 120px;
-    min-width: 80px;
-}
-
-header #logo img{
-    width: 100%;
-}
-
-header #menu #main{
-    display: flex;
-    display: -ms-flexbox;
-}
-
-#main{
+#main #body .item{
     text-align: center;
 }
 
-#main #hide{
-    height: 80px;
+#main #body .item .item_img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
 }
 
-#main .body_item{
-    width: 150px;
-}
-
-#main .body_item img{
+#main #body .item img{
     width: 100%;
-}
-
-.bottom_menu{
-    display: flex;
-    display: -ms-flexbox;
-}
-
-.bottom_menu li{
-    margin-left: 2em;
-}
-
-footer{
-    text-align: center;
 }
