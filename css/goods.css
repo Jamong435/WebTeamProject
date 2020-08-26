@@ -1,131 +1,132 @@
 
 
-            *{
-                margin: 0;
-                padding:0;
-                font-family: 'Nanum Gothic', Helvetica, sans-serif;
-            }
-
-            body{
-                
-                padding-right: 50px;
-                padding-left: 50px;
-
-            }
 
 
+ *{
+    margin: 0;
+    padding:0;
+    font-family: 'Nanum Gothic', Helvetica, sans-serif;
+}
 
-            .text{
-                text-align: center;
-            }
+body{
+    
+    padding-right: 50px;
+    padding-left: 50px;
 
-            /* id */
-            #blue {
-                color: rgb(0, 79, 170);
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
-
-
-            #green {
-                color: rgb(0, 182, 30);
-                font-weight: bold;
-                font-size: 0.9em;
-
-                padding-top: 5px;
-                padding-bottom: 5px;
-
-                width: 500px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            article{
-                /* border: 3px solid green; */
-
-                /* width: 200px;
-                height: 270px; */
-
-                width: 30%;
-                height: 50%;
-
-                max-width: 500px;
-                max-height: 500px;
-               
-                overflow: auto;
-                text-align: center;
-            }
-
-            article:hover{
-                opacity: 60%;
-                cursor: pointer;
-            }
-
-            #container img{
-                /* border: 2px solid yellow; */
-
-                width: 90%;
-                height: 100%;
-                
-                margin: 0;
-                padding: 0;
-            }
-
-            #name{
-                font-size: 1.1em;
-                margin: 0, 50px;
-
-            }
-
-            
-            #red{
-                color: red;
-                display: inline-block;
-            }
-
-            #price{
-                display: inline-block;
-                text-decoration: line-through;
-                color: darkgray;
-            }
+}
 
 
-            .saleimg{
-                position: absolute;
-                top: 18%;
-                left: -40px;
-            }
+.text{
+    text-align: center;
+}
 
-            .saleimg img{
-                position: relative;
-
-                width: 20%;
-                height: 20%;
-            }
+/* id */
+#blue {
+    color: rgb(0, 79, 170);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
 
+#green {
+    color: rgb(0, 182, 30);
+    font-weight: bold;
+    font-size: 0.9em;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    /* border: 3px solid green; */
+
+    /* width: 200px;
+    height: 270px; */
+
+    width: 30%;
+    height: 50%;
+
+    max-width: 500px;
+    max-height: 500px;
+   
+    overflow: auto;
+    text-align: center;
+}
+
+article:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+
+#container img{
+    /* border: 2px solid yellow; */
+
+    width: 90%;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+
+#name{
+    font-size: 1.1em;
+    margin: 0, 50px;
+
+}
 
 
-            /* 반응형 웹 적용 (RWD) */
-            /* 미디어쿼리 적용 (해상도에 반응하기) */
-            /* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
-            @media screen and (max-width: 640px){
+#red{
+    color: red;
+    display: inline-block;
+}
 
-                body{
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-
-                #green{
-                    margin-left: 5;
-                    margin-right: 5;
-                }
-                
-                .saleimg{
-                left: -100px;
-                    
-                }
+#price{
+    display: inline-block;
+    text-decoration: line-through;
+    color: darkgray;
+}
 
 
-            }
+.saleimg{
+    position: absolute;
+    top: 18%;
+    left: -40px;
+}
+
+.saleimg img{
+    position: relative;
+
+    width: 20%;
+    height: 20%;
+}
+
+
+
+
+/* 반응형 웹 적용 (RWD) */
+/* 미디어쿼리 적용 (해상도에 반응하기) */
+/* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
+@media screen and (max-width: 640px){
+
+    body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #green{
+        margin-left: 5;
+        margin-right: 5;
+    }
+    
+    .saleimg{
+    left: -100px;
+        
+    }
+
+
+}

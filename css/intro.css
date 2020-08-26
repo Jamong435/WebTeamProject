@@ -1,4 +1,9 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
     padding-right: 100px;
@@ -106,6 +111,7 @@ h2{
 .detailtxt{
     width: 160px;
     text-align: justify;
+    
 }
 
 
@@ -148,12 +154,15 @@ footer{
     width: 300px;
     font-size: 1.5em;
     font-weight: bold;
+
+
 }
 
 
 .detailtxt{
     width: 300px;
     text-align: justify;
+    margin-top: 20px;
 }
 
     #container{
