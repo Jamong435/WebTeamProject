@@ -8,6 +8,11 @@
     font-family: 'Nanum Gothic', Helvetica, sans-serif;
 }
 
+.header{
+    right: 0.5em;
+    left: 0.5em;
+}
+
 body{
     
     padding-right: 50px;

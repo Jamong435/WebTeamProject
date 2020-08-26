@@ -9,9 +9,9 @@ body{
     align-content: center;
 }
 
-/* Header */
-header{
-    padding: 10px;
+.header{
+    right: 0.5em;
+    left: 0.5em;
 }
 
 /* section */
