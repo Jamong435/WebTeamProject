@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>라디오PD교실 | 마표FM</title>
+        <link rel="stylesheet" href="./css/radioPDschool.css">
 
 
         
@@ -13,17 +14,17 @@
         <!-- 구글폰트 -->
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
 
-        <style>            
-            #map{                
-                width: 100%;
-                height: 400px;
-            }
-        </style>
       
         <!-- 지도에 보여줄 함수 설정 -->
         <!-- 37.560767, 126.917323 -->
-        
-        <script>            
+        <script type="module">
+            import showMap from './js/radioPDschool.js';
+            showMap();
+        </script>
+        <!-- 라이브 서버에서만 지도가 나옴 -->
+
+        <!-- js못받았을때 출력 -->
+        <script>
             function showMap(){
                 var e=document.getElementById('map');
                 var pos={lat:37.560767, lng:126.917323};
@@ -45,72 +46,11 @@
                 });
 
                 marker.addListener( 'click',function(){
-                    infowindow.open(map, marker);
+                infowindow.open(map, marker);
                 });
-
-            };
+            }
         </script>
-
-
-        <style>
-            *{padding: 0; margin: 0;}
-            #main{display: flex; align-items: center; justify-content: center;}
-            #section_text{margin: auto;}
-            
-            .border_top{
-                display: flex;
-                align-items: center;
-                padding: 16px;
-                flex-wrap: wrap;                
-            }
-            hr{display: inline-block; width: 100%;}
-            #text_area{
-                font-family: 'Nanum Gothic', sans-serif;
-                font-size: 15px;
-                display: flex;
-                flex-direction: column;
-                padding: 16px;
-                align-items: center;                
-            }
-            #button_area{margin: auto; padding: 16px; display: flex; }
-            .button01{
-                flex-grow: 1;
-                font-family: 'Nanum Gothic', sans-serif;                
-                background-color: #19ada9;
-                padding: 16px;
-                border-radius: 3px;
-                color: white;
-                font-size: 13px;
-                text-decoration: none;
-                opacity: 1.0;
-            }
-            .button01:hover{
-                opacity: 0.8;
-            }
-            .button_bg{padding: 5px 16px 16px 16px;}
-            #empty_area{flex-grow: 1; flex-shrink: 2;}
-
-            .img_area01{margin: auto; display: flex;}
-            #map_area{
-                padding: 16px;
-                display: flex;
-            }
-
-            @media screen and (max-width: 650px) {
-                .img_area01, #button_area{
-                    flex-direction: column;
-                    align-items: center;
-                }
-                .button_bg{
-                    margin: 16px;
-                }
-                #map_area{
-                    flex-shrink: 2;
-                }
-            }
-            
-
-        </style>
+        
     </head>
 
     <body onload="showMap()">
@@ -153,16 +93,16 @@
                 
                 <!-- 이미지 1번 시작 -->
                 <div class="img_area01" style="padding: 16px;">
-                    <img style="width: 100%;" src="./imgs_song/image_1597386056321_1500.jpg" alt="제 29기 라디오PD교실">
+                    <img style="width: 100%;" src="./image/img_radiopdschool_page/image_1597386056321_1500.jpg" alt="제 29기 라디오PD교실">
                 </div>
                 
                 <!-- 이미지 2번 좌우배치 / 줄어들면 수직배치로 변경 -->
                 <div class="img_area01">
                     <div class="img02" style="padding: 16px;">
-                        <img style="width: 100%;" src="./imgs_song/image_1589436667380_750.jpg" alt="">
+                        <img style="width: 100%;" src="./image/img_radiopdschool_page/image_1589436667380_750.jpg" alt="">
                     </div>
                     <div class="img02" style="padding: 16px;">
-                        <img style="width: 100%;" src="./imgs_song/image_1589436844552_750.png" alt="">
+                        <img style="width: 100%;" src="./image/img_radiopdschool_page/image_1589436844552_750.png" alt="">
                     </div>
                 </div>
                 
