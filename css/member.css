@@ -17,7 +17,7 @@ body{
 section{
     margin-top: 20px;
 
-    padding: 100px;
+    /* padding: 100px; */
     text-align: center;
 }
 
@@ -30,6 +30,8 @@ div h1{
 }
 
 article{
+    border: 2px solid yellow;
+
     /* display: inline-block; */
     position: relative;
 
@@ -37,6 +39,7 @@ article{
 }
 
 article:hover{
+
     opacity: 70%;
 }
 
@@ -68,7 +71,7 @@ article div{
 }
 
 .container{
-    /* border: 2px dashed red; */
+    border: 2px dashed red;
 
     width: 100%;
     /* height: 1200px; */
@@ -87,7 +90,7 @@ article div{
 }
 
 .row{
-    /* border: 3px solid rebeccapurple; */
+    border: 3px solid rebeccapurple;
 
     width: 100%;
 
@@ -95,7 +98,7 @@ article div{
     display: flex;
     flex-direction: row;
 
-    text-align: center;
+    justify-content: center;
     margin-bottom: 3px;
     margin-top: 3px;
 
