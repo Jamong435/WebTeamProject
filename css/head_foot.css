@@ -1,0 +1,138 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul{list-style-type: none;}
+
+a{text-decoration: none;}
+
+/*header부분*/
+
+header{
+    width: 100%;
+    padding: 8px 0px;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    text-align: center;
+}
+
+header *{
+    position: relative;
+    display: inline-block;
+}
+
+#header_wrap{
+    width: 1240px;
+    max-width: 1240px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    left: 0px;
+    padding-left: 16px;
+}
+
+#logo a{
+    width: 120px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0px;
+    padding: 15px 0px;
+    padding-right: 16px;
+    font-size: 15px;
+}
+
+#menu li{
+    position: relative;
+}
+
+#menu a{
+    cursor: pointer;
+    color: black;
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#menu a:hover{
+    color: #999999CC;
+}
+
+#menu .choice{
+    color: #195887;
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#menu .hide_menu{
+    display: none;
+    position: absolute;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-top: 0.5rem;
+    width: 10em;
+    padding: 0.3em 0em 0.3em 0em;
+}
+
+#menu .hide_menu li{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0.5em 1em;
+    line-height: 1em;
+    text-align: left;
+}
+
+#menu #main>li:hover .hide_menu, .hide_menu:hover{
+    display: block;
+}
+
+/*footer부분*/
+
+footer{
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+footer #footer_menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer_menu li{
+    margin-right: 1em;
+}
+
+footer #footer_menu li a{
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer #footer_menu li a:hover{
+    color: lightcoral;
+}
+
+#footer_info{
+    color: #222222;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
