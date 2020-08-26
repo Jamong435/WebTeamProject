@@ -15,6 +15,9 @@ body{
 }
 
 section{
+    margin-top: 20px;
+
+    padding: 100px;
     text-align: center;
 }
 
@@ -117,7 +120,7 @@ article div{
 
 /* 반응형 웹 적용 (RWD) */
 /* 미디어쿼리 적용 (해상도에 반응하기) */
-/* 화면너비가 700px 보다 작을 때 {}안의 스타일 적용 */
+/* 화면너비가 640px 보다 작을 때 {}안의 스타일 적용 */
 @media screen and (max-width: 640px){
     
     body{
@@ -125,6 +128,10 @@ article div{
         padding-right: 5px;
 
         text-align: justify;
+    }
+
+    section{
+        padding: 20px;
     }
 
     .row{

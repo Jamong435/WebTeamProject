@@ -6,6 +6,7 @@
 
 body{
     margin: 0;
+    
     padding-right: 100px;
     padding-left: 100px;
     font-family: 'Nanum Gothic', Helvetica, sans-serif;
@@ -15,13 +16,15 @@ body{
 }
 
 /* Header */
-header{
+/* header{
     padding: 10px;
-}
+} */
 
 /* section */
 section{
-    margin-top: 100px;
+    margin-top: 20px;
+
+    padding-top: 50px;
     padding: 100px;
     text-align: center;
 }
@@ -116,10 +119,10 @@ h2{
 
 
 /* footer */
-footer{
+/* footer{
     padding: 20px;
     text-align: center;
-}
+} */
 
 
 /* 반응형 웹 적용 (RWD) */
