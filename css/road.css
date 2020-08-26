@@ -69,7 +69,8 @@ footer{
 @media screen and (max-width: 640px){
 
     body{
-        padding-left: 5%;
+        /* padding-left: 5%; */
+        padding-left: 0%;
         padding-right: 0%;
     }
 
