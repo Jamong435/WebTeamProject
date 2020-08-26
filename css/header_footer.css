@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -181,62 +179,6 @@ a{text-decoration: none;}
     .header{
         display: none;
     }
-    
-    .header_mobile{
-        width: 100%;
-        padding: 8px 0px;
-        position: fixed;
-        z-index: 99999;
-        display: flex;
-        text-align: center;
-    }
-    .header_mobile *{
-        position: relative;
-        display: inline-block;
-    }
-    
-    .header_wrapper{
-        width: 1240px;
-        max-width: 1240px;
-        background-color: transparent;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-    /* ======================================== */
-
-    #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
-    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
-    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
-    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
-        width: 100%;
-    }
-
-    #footer_info{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-    }
-
-    #footer_info .footer_info{
-        word-break: break-all;
-    }
-}
-
-@media screen and (max-width:640px) {
-
-    /* header 모바일 적용 */
-    .header{
-        display: none;
-    }
 
     .header_mobile{
         width: 100%;
@@ -269,7 +211,8 @@ a{text-decoration: none;}
     #show_mobile_menu_space{
         position: fixed;
         width: 100%;
-        height: 1000vh;
+        /* height: 1000vh; */
+        min-height: 100%;
         z-index: 55554;
         background-color: #FFFFFFDD;
         cursor: pointer;
@@ -286,11 +229,12 @@ a{text-decoration: none;}
     #show_mobile_menu{
         position: fixed;
         width: 80%;
-        min-height: 1000vh;
+        min-height: 100%;
         z-index: 55555;
         background-color: #313139;
         padding: 0.5em;
-        overflow: scroll;
+        overflow-y: scroll;
+        top: 0; bottom: 0;
     }
 
     #show_mobile_menu a{
@@ -302,15 +246,11 @@ a{text-decoration: none;}
         cursor: pointer;
         padding: 1em 1em;
     }
-    #show_mobile_menu ul{
-        overflow: scroll;
-    }
 
     #show_mobile_menu li{
         width: 100%;
         display: block;
         margin-top: 0.5em;
-        /* border: 1px solid steelblue; */
     }
 
     #show_mobile_menu a:hover{
@@ -330,6 +270,39 @@ a{text-decoration: none;}
         font-size: 0.9em;
     }
 
+    /* ======================================== */
+
+    #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+    /* #footer_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0px;
+    } */
+
+    .footer #footer_menu ul{
+        flex-direction: column;
+    }
+
+    .footer #footer_menu li{
+        margin: 0.5em 0px;
+    }
+
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
 }
 
 @media screen and (max-width:320px){
