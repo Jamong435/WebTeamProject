@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+.header{
+width: 100%;
+padding: 15px 0px;
+position: fixed;
+z-index: 99999;
+display: flex;
+text-align: center;
+}
+.header *{
+    display: inline-block;
+}
+
+.header_wrapper{
+    width: 1240px;
+    max-width: 1240px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* logo */
+#logo{
+    left: 0px;
+    padding-left: 16px;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* 메뉴들 */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#main_menu{
+    right: 0px;
+    padding: 15px 0px;
+    padding-right: 16px;
+    font-size: 15px;
+}
+
+#main_menu a{
+    color: black;
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#main_menu a:hover{
+    color: #FFFFFF99;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.footer_wrapper{
+    /* display: inline-block; */
+    max-width: 980px;
+}
+
+.footer #footer_menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer #footer_menu li{
+    margin-right: 1em;
+}
+
+.footer #footer_menu li a{
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer #footer_menu li a:hover{
+    color: lightcoral;
+}
+
+#footer_info{
+    color: #222222;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 반응형 웹 (RWD) */
+/* 미디어 쿼리 (해상도에 반응하기) */
+/* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
+@media screen and (max-width:640px) {
+    #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+    #footer_info{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+    .footer #footer_menu ul{
+        flex-direction: column;
+    }
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
+}

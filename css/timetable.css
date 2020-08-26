@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+/* ===================================================================== */
+
+/* 마포 타이틀 영역 */
+.mapo_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* 마포 타이틀에 감싸는 녀석 flex효과를 주기 위해서 */
+.mapo_content .mapo_title_wrap{
+    width: 980px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* 선 */
+.mapo_content .mapo_title_wrap #line{
+    width: 20%;
+    display: inline-block;
+    margin: 1em 0px;
+} 
+
+/* 타이틀 글씨 */
+.mapo_content h1{
+    color: #195887;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.mapo_content .time_table_img_wrap{
+    width: 980px;
+    padding: 16px;
+}
+
+.mapo_content .time_table_img_wrap img{
+    width: 100%;
+}
+
+@media screen and (max-width:640px){
+
+}
+
+@media screen and (max-width:320px){
+
+}
