@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>마포FM</title>
+
+        <script src="https://kit.fontawesome.com/90000e539c.js" crossorigin="anonymous"></script>
+
+    </head>
+    <!-- 글작성 html -->
+    <body>
+        <header></header>
+
+        <section id="main">
+            <!-- input요소를 감싸는 div 사이즈 지정해야함 -->
+            <div id="input_area">
+                
+                <div id="title_area">
+                    <span class="input_titles">제목</span><br>
+                    <input class="input_text" id="block" type="text">
+                </div>
+
+                <div id="writer">
+                    <span class="input_titles">글쓴이</span><br>
+                    <input class="input_flex" type="text">
+                </div>
+                
+                <!-- 유효성검사적용해보기 -->
+                <div id="email">
+                    <span class="input_titles">이메일</span><br>
+                    <input class="input_flex" type="text">
+                </div>
+
+                <div id="password">
+                    <span class="input_titles">비밀번호</span><br>
+                    <input class="input_flex" type="password">
+                </div>
+
+                <div id="password_check">
+                    <span class="input_titles">비밀번호 확인</span><br>
+                    <input class="input_flex" type="password">
+                </div>
+
+                <!-- checkbox -->
+                <div id="checkBox_area">
+                    <input id="checkBox_F" type="checkbox">
+                    <label for="checkBox_F" id="checkBox_text"><a target="_blank" href="https://www.mapofm.net/boardPrivacy" id="privacy">개인정보 수집 및 이용</a>에 동의합니다.</label>
+                </div>
+
+                <div id="icon_area">
+                    <!-- 모두선택함수 -->
+                    <span id="icon_paper_all"><i class="far fa-newspaper" onclick="selectAll()"></i></span>
+                    <div id="fontSize_icon"><span id="nomFont16">16</span><i class="fas fa-caret-down"></i></div>
+                    
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <footer></footer>
+    </body>
+</html>
