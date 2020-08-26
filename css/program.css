@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+/* ========================================================================================== */
+
+
+.wrapper{padding: 16px;}
+
+/* .section{
+    position: relative;
+} */
+
+/* 마포 타이틀 영역 */
+.mapo_title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* 마포 타이틀에 감싸는 녀석 flex효과를 주기 위해서 */
+.mapo_title .mapo_title_wrap{
+    width: 980px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* 선 */
+.mapo_title .mapo_title_wrap #line{
+    width: 20%;
+    display: inline-block;
+} 
+
+/* 타이틀 글씨 */
+.mapo_title h1{
+    color: #195887;
+    font-size: 35px;
+}
+
+.mapo_title #blue_text{
+    color: #122C79;
+}
+
+.mapo_title #gray_text{
+    color: #777;
+}
+
+/* 유투브로 이동 버튼 */
+.mapo_title #mapiYouTubeButton{
+    background-color: #D31422;
+    display: inline-block;
+    padding: 15px 0px;
+    border-radius: 3px;
+}
+
+.mapo_title #mapiYouTubeButton a{
+    color: white;
+    font-size: 15px;
+    padding: 15px 26.25px;
+}
+
+.mapo_title #mapiYouTubeButton a:hover, .mapo_title #mapiYouTubeButton:hover{
+    background-color: #D31422CC;
+    color: #FFFFFFCC;
+}
+
+.flex_back_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex_back_wrap .flex_inner_wrap{
+    width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /*글씨를 기준으로 아래로 맞추기*/
+    
+}
+
+#flex_start_back_wrap .flex_inner_wrap{
+    width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /*글씨를 기준으로 위로 맞추기*/
+}
+
+#flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+    margin-top: 5em; /* 좌측 위로 5글자 만큼 띄우기 */
+}
+
+.flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory{
+    width: 50%;
+    padding: 0px 20px;
+    margin: 0px 4px 0px 0px;
+}
+
+.flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+    width: 50%;
+    padding: 0px 20px;
+    margin: 0px 4px 0px 0px;
+}
+
+.flex_back_wrap .flex_inner_wrap .leftContent_mapoStory{
+    width: 50%;
+    padding: 0px 20px;
+    margin: 0px 4px 0px 0px;
+}
+
+.flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+    width: 50%;
+    padding: 0px 20px;
+    margin: 0px 4px 0px 0px;
+}
+
+.flex_back_wrap .flex_inner_wrap img{
+    width: 90%;
+    image-rendering: auto;
+    height: auto !important; 
+}
+
+.flex_back_wrap .red_title{
+    color: #BF3B3B;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.flex_back_wrap .red_sub_title{
+    color: #BF3B3B;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0.5em 0px;
+}
+
+.flex_back_wrap .blue_main_title{
+    color: #195887;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.flex_back_wrap .blue_main_sub_title{
+    color: #195887;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0.5em 0px;
+}
+
+.flex_back_wrap .gray_title{
+    color: #777;
+    font-size: 20px;
+}
+
+.flex_back_wrap .gray_text{
+    color: #777;
+    font-size: 12px;
+    margin: 0.5em 0px;
+}
+
+.flex_back_wrap .gray_bold{
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0.5em 0px;
+}
+
+.flex_back_wrap .blue_title{
+    color: #195887;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex_back_wrap .blue_title a{
+    color: #195887;
+}
+
+.flex_back_wrap .blue_sub_title_right{
+    color: #195887;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex_back_wrap .blue_sub_title_right a{
+    color: #195887;
+}
+
+.flex_back_wrap .link_blue_text a{
+    color: #195887;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+.flex_back_wrap .link_brown_text a{
+    color: #6F4F1D;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 반응형 웹 (RWD) */
+/* 미디어 쿼리 (해상도에 반응하기) */
+/* 화면 너비가 640보다 작을때 중괄호 안의 스타일 적용 */
+@media screen and (max-width:640px) {
+    #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:320px){
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+}
+
+
+
