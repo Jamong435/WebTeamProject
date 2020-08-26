@@ -4,6 +4,7 @@ header{
     z-index: 10;
     display: flex;
     display: -ms-flexbox;
+    height: 70px;
 }
 
 header #logo{
@@ -12,29 +13,39 @@ header #logo{
 }
 
 header #logo img{
-    width: 80%;
-    text-align: center;
+    width: 100%;
 }
 
-header #menu{
-    list-style-type: none;
+header #menu #main{
     display: flex;
     display: -ms-flexbox;
 }
 
-header #menu li{
-    margin-right: 10px;
-
+#main{
+    text-align: center;
 }
 
-header #menu a:hover{
-    
+#main #hide{
+    height: 80px;
 }
 
-header #menu .hide{
-    display: none;
+#main .body_item{
+    width: 150px;
 }
 
-header #menu ul{
-    list-style-type: none;
+#main .body_item img{
+    width: 100%;
+}
+
+.bottom_menu{
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.bottom_menu li{
+    margin-left: 2em;
+}
+
+footer{
+    text-align: center;
 }
