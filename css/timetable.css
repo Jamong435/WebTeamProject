@@ -6,6 +6,11 @@
 ul{list-style-type: none;}
 a{text-decoration: none;}
 
+/* 헤더 영역 a요소에 text-decoration이 안먹어서 */
+#main_menu *{
+    text-decoration: none;
+}
+
 /* ===================================================================== */
 
 /* 마포 타이틀 영역 */
