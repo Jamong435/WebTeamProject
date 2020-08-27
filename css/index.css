@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+.header{
+    width: 100%;
+    padding: 8px 0px;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    text-align: center;
+}
+.header *{
+    position: relative;
+    display: inline-block;
+}
+
+.header_wrapper{
+    width: 1240px;
+    max-width: 1240px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* logo */
+#logo{
+    left: 0px;
+    padding-left: 16px;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* 메뉴들 */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#main_menu{
+    right: 0px;
+    padding: 15px 0px;
+    padding-right: 16px;
+    font-size: 15px;
+}
+
+#main_menu .top_menu_text{
+    cursor: pointer;
+}
+
+#main_menu a{
+    color: black;
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#main_menu a:hover{
+    color: #999999CC;
+}
+
+/* ========================================================================================== */
+
+/* 추가 해당 페이지의 필요한 부분 */
+.header #main_menu .menu_sub_page .menu_page_blue, .sub_menu_page{
+    
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 라디오 페이지의 헤더메뉴중 사연과 신청곡의 커서 포인트 */
+.header #main_menu .menu_sub_page {
+    padding: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.header #main_menu li{
+    position: relative;
+}
+
+#menu_sub_text{
+    display: none;
+    position: absolute;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-top: 0.5rem;
+    width: 10em;
+    padding: 0.3em 0em 0.3em 0em;
+}
+
+#menu_sub_text li{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0.5em 1em;
+    line-height: 1em;
+    text-align: left;
+    
+}
+
+.header #main_menu .menu_sub_page:hover #menu_sub_text, #menu_sub_text:hover{
+    display: block;
+}
+
+.header2{
+    width: 100% !important;
+    height: auto;
+    max-height: 80em;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    letter-spacing: 7px;
+    z-index: 1;
+    margin-bottom: -30px;
+}
+
+#content {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    top: 600px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+   
+   
+   
+}
+#wrap_content{
+    width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
+    background-color: whitesmoke;
+
+}
+
+
+#content_menu img{
+   min-width: 200px;
+   padding: 10px;
+}
+
+/* .wrap_navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 33;
+    position: fixed;
+} */
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    max-width: 1040px;
+    min-width: 640px;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.navbar_logo {
+    font-size: 25px;
+    color: white;
+    padding: 30px;
+    align-items: center;
+    /* 고유한 크기를 유지하기위해 */
+    flex-grow: 2;
+}
+
+.navbar_menu {
+
+    /* 줄어들때 같이 안줄어들어 아랫줄로가지않겠다 */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    margin-right: 1em;
+    /* 항상비율을 유지하는 flex basis */
+    flex-basis: 420px;
+    
+
+}
+.navbar_menu a{
+    color: white;
+}
+
+.navbar_menu li {
+
+    padding: 40px 12px;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.footer_wrapper{
+    display: inline-block;
+    max-width: 980px;
+    min-width: 640px;
+}
+
+.footer #footer_menu li{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.footer #footer_menu li a{
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer #footer_menu li a:hover{
+    color: lightcoral;
+}
+
+#footer_info{
+    color: #222222;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content_on_air_button{
+    background-color: #FF6868;
+    
+    border-radius: 3px;
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    right: 50%;
+    font-weight: bold;
+    padding: 1em 0em;
+    margin: 30px 0px 10px;
+}
+#content_on_air_button a{
+    color: white;
+    padding: 20px;
+    letter-spacing: -0.2px;
+    
+}
+.footer_icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon li{
+    margin: 1em 1em;
+}
+.footer_icon i{
+    font-size: 2rem;
+}
+.footer_icon #footer_icon_phone a, 
+.footer_icon #footer_icon_message a,
+.footer_icon #footer_icon_instagram a{
+    color: black;
+}
+.footer_icon #footer_icon_facebook a{
+    color: #3E5B9F;
+}
+.footer_icon #footer_icon_kakao_ch a{
+    color: #FAB900;
+}
+.footer_icon #footer_icon_youtube a{
+    color: #cd201f;
+}
+
+        #go{
+           display: inline-block; 
+           position: relative;
+           top: 30px;
+           background-image: url('../image/img_index_page/img_main_headset.jpg'); 
+           width: 200px;
+           height: 130px; 
+           background-size: cover;
+           color: whitesmoke;
+          
+        }
+        #go p{
+        
+           margin-top: 60px;
+           font-size: 35px;
+           color: whitesmoke;
+        
+           
+        }
+
+        @media screen and (max-width: 350px){
+           #content_menu>a>img{
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+                
+            }
+            #go{
+                width: 100%;
+                height: 40vh;
+               margin-bottom: 30px;
+               
+            }
+            #go p{
+                margin-top: 160px;
+
+            }
+            #content_menu>div>a>img{
+                width: 100%;
+              height: 100%;
+            }
+           }
