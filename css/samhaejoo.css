@@ -18,6 +18,16 @@ p{text-align: center; font-weight: bold; padding: 0; margin: 0;}
     align-items: center;
     justify-content: center;
 }
+/* 로고사이즈 개별 수정 */
+#logo{
+    left: 0px;
+    padding-left: 16px;
+}
+
+.logo{
+    width: 120px;
+    height: 40px;
+}
 .buttons{background-color: #775016;
     font-size: 15px;
     padding: 16px; 

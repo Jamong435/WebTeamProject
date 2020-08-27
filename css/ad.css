@@ -1,5 +1,5 @@
 *{padding: 0; margin: 0;}
-html{font-size: 16px;}
+html{font-size: 16px; display: flex; flex-direction: column;}
 #main{
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@ html{font-size: 16px;}
 }
 #top_area{
     padding: 16px;
-    width: 980px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +47,9 @@ html{font-size: 16px;}
     text-align: center;
     font-weight: bold;
 }
+
+
+
 #color77{color: #777777;}
 .color_black{color: black;}
 #change_fontsize{font-size: 4rem; display: flex; align-items: center; justify-content: center; text-align: center; margin: 0;}
@@ -55,3 +58,38 @@ html{font-size: 16px;}
 .color_blue{color: #195887;}
 .underbar{text-decoration: underline;}
 #a_hover:hover{text-decoration: none; color: #bc0000;}
+
+@media screen and (max-width:640px) {
+
+    /* header 모바일 적용 */
+    .header{
+        display: none;
+    }
+    .header_mobile{
+        width: 640px;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.3em;
+    }
+    .header_mobile *{
+        position: relative;
+        display: inline-block;
+    }
+
+    .header_mobile a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .header_wrapper_mobile{
+        width: 100%;
+        margin: 0px 0.5em;
+        padding: 0px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
