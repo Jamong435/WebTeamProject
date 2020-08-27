@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>공동체라디오 컨설팅 | 마포FM</title>
+
+        <link rel="stylesheet" href="./css/consulting.css">
+        <link rel="stylesheet" href="./css/header_footer.css">
+
+        <!-- 이미지 아이콘 사진 -->
+        <script src="https://kit.fontawesome.com/90000e539c.js" crossorigin="anonymous"></script>
+
+        
+         <!-- js부르기 -->
+         <script src="./js/header_footer.js"></script>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_wrapper">
+                 <!-- main logo -->
+            <div id="logo">
+                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+            </div>
+
+            <!-- main menu -->
+            <nav class="nav">
+                <div id="main_menu">
+                    <ul>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">소개</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./intro.html">마포FM?</a></li>
+                                <li><a href="./reward.html">후원</a></li>
+                                <li><a href="./road.html">오시는 길</a></li>
+                                <li><a href="./member.html">4층 사람들</a></li>
+                                <li><a href="./goods.html">굿즈</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">라디오</a>
+                            <ul id="menu_sub_text">
+                                <li ><a href="./djbox.html">사연과 신청곡</a></li>
+                                <li><a href="./program.html">프로그램 소개</a></li>
+                                <li><a href="./timetable.html">편성표</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text menu_page_blue">사업</a>
+                                <ul id="menu_sub_text">
+                                    <li><a href="./ad.html">라디오 광고</a></li>
+                                    <li><a href="./radioPDschool.html">라디오PD교실</a></li>
+                                    <li><a href="./samhaejoo.html">삼해주</a></li>
+                                    <li><a href="./runradio.html">달려라!디오</a></li>
+                                    <li class="sub_menu_page"><a class="menu_page_blue" href="./consulting.html">공동체라디오 컨설팅</a></li>
+                                </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">커뮤니티</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./notice.html">공지사항</a></li>
+                                <li><a href="./news.html">뉴스레터</a></li>
+                                <li><a href="./maponews.html">마포소식</a></li>
+                                <li><a href="./board.html">증명서 신청</a></li>
+                                <li><a href="https://cafe.naver.com/mapofmboard/4" target="_blank">공유자료</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">대관/행사</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="https://www.mapofm.net/performance">공연 / 강의</a></li>
+                                <li><a href="https://www.mapofm.net/pluto">PLUTO (플루토)</a></li>
+                                <li><a href="https://www.mapofm.net/studio">스튜디오 대관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./login.html"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+
+            </div>
+           
+        </header>
+
+        <!-- ----------------------------------------------------------------------- -->
+
+        <!-- header -> 모바일 용 -->
+        <header class="header_mobile">
+            <div class="header_wrapper_mobile">
+
+                <!-- 햄버거 모양 -->
+                <div id="menu_mobile_hambager" onclick="show_mobile_menu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- main logo -->
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="shop_cart_mobile">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+           
+        </header>
+
+        <div id="show_mobile_menu" class="display_none">
+            <div class="show_mobile_menu_01">
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="login_mobile">
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+
+            <div style="height: 2em;"></div>
+
+            <div class="show_mobile_menu_02">
+                <ul>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu01()">소개</a>
+                        <ul id="menu_sub_text_mobile01" class="menu_sub_text_mobile display_none">
+                            <li><a href="./intro.html">마포FM?</a></li>
+                            <li><a href="./reward.html">후원</a></li>
+                            <li><a href="./road.html">오시는 길</a></li>
+                            <li><a href="./member.html">4층 사람들</a></li>
+                            <li><a href="./goods.html">굿즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu02()">라디오</a>
+                        <ul id="menu_sub_text_mobile02" class="menu_sub_text_mobile display_none">
+                            <li><a href="./djbox.html">사연과 신청곡</a></li>
+                            <li><a href="./program.html">프로그램 소개</a></li>
+                            <li><a href="./timetable.html">편성표</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu03()">사업</a>
+                        <ul id="menu_sub_text_mobile03" class="menu_sub_text_mobile display_none">
+                            <li><a href="./ad.html">라디오 광고</a></li>
+                            <li><a href="./radiopdschool.html">라디오PD교실</a></li>
+                            <li><a href="./samhaejoo.html">삼해주</a></li>
+                            <li><a href="./runradio.html">달려라!디오</a></li>
+                            <li><a href="./consulting.html">공동체라디오 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu04()">커뮤니티</a>
+                        <ul id="menu_sub_text_mobile04" class="menu_sub_text_mobile display_none">
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="./news.html">뉴스레터</a></li>
+                            <li><a href="./maponews.html">마포소식</a></li>
+                            <li><a href="./board.html">증명서 신청</a></li>
+                            <li><a href="https://cafe.naver.com/mapofmboard/4" target="_blank">공유자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu05()">대관/행사</a>
+                        <ul id="menu_sub_text_mobile05" class="menu_sub_text_mobile display_none">
+                            <li><a href="https://www.mapofm.net/performance">공연 / 강의</a></li>
+                            <li><a href="https://www.mapofm.net/pluto">PLUTO (플루토)</a></li>
+                            <li><a href="https://www.mapofm.net/studio">스튜디오 대관</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="show_mobile_menu_space" onclick="show_mobile_out_touch()" class="display_none"></div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <section id="main">
+            <!-- 공백 -->
+            
+            <div><div style="height: 6rem;"></div></div>
+
+            <div class="div_normal"><img id="consulting_img" src="./image/img_consulting_page/image_1561531380908_500.jpg" alt=""></div>
+            <div class="div_normal"><p id="big_text">공동체라디오 컨설팅?</p></div>
+
+            <div class="div_normal">
+                <p id="normal_blue_text"><span>공동체라디오를 만들고자 준비하고 있는 단체를 위해 만들어진 서비스</span></p>
+
+                <p class="empty_area_p"><br></p>
+
+                <p class="normal_text"><span>15년간 마포FM을 운영하며 쌓아온 경험과 노하우로</span></p>
+                <p class="normal_text"><span>공동체라디오를 만들고자하는 개인/단체에게 도움을 드릴 수 있습니다.</span></p>
+
+                <p class="empty_area_p"><br></p>
+                <p class="normal_text"><span>(*비용 별도논의)</span></p>
+                <p class="empty_area_p"><br></p>
+
+                <p class="normal_red_text"><span>＃공동체라디오 설립 및 운영 연구용역 대행</span></p>
+                <p class="normal_red_text"><span>＃공동체라디오 설립 컨설팅 제공</span></p>
+                <p class="normal_red_text"><span>＃공동체라디오 교육 및 워크숍 진행</span></p>
+                <p class="empty_area_p"><br></p>
+
+                <p class="underbar_text"><span>본 컨설팅은, 단순 공동체라디오 설립을 위한 기초적인 단계를 너머</span></p>
+                <p class="underbar_text"><span>어느정도 기반이 갖춰져있고 곧 실무를 준비하는 자를 대상으로 합니다.</span></p>
+                <p class="empty_area_p"><br></p>
+
+                <p class="normal_text"><span> 문의: 02-332-3247</span></p>
+                <p class="empty_area_p"><br></p>
+                
+            </div>
+            
+            <div class="empty_area"><p><br></p></div>
+
+            
+            <div class="div_normal">
+                <p class="text_bottom_fontsize">
+                    <span class="bottom_text_black">※ 공동체라디오 설립에 관한 단순 FAQ나 문의는 </span>
+                    <span class="bottom_text_blue">이메일</span>
+                    <span class="bottom_text_black">로만 받고 있습니다.</span>
+                </p>
+                <p class="text_bottom_fontsize"><span class="bottom_text_blue">( radiomapo@hanmail.net )</span></p>
+            </div>
+
+            <div class="empty_area"><p><br></p></div>
+            
+        </section>
+
+               <!-- Footer -->
+       <footer class="footer">
+
+           
+        <div class="footer_wrapper">
+
+            <!-- 전화, 메세지, 페이스북, 인스타그램 등등의 아이콘들 24 24크기 -->
+            <div class="footer_icon">
+                <ul>
+                    <li id="footer_icon_phone">
+                        <a href="#"><i class="fas fa-phone-square-alt"></i></a>
+                    </li>
+                    <li id="footer_icon_message">
+                        <a href="#"><i class="fas fa-envelope-square"></i></a>
+                    </li>
+                    <li id="footer_icon_facebook">
+                        <a href="https://www.facebook.com/mapofm" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li id="footer_icon_instagram">
+                        <a href="https://www.instagram.com/mapofm/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li id="footer_icon_kakao_ch">
+                        <a href="https://pf.kakao.com/_ezKuxd" target="_blank"><i class="fas fa-check-square"></i></a>
+                    </li>
+                    <li id="footer_icon_youtube">
+                        <a href="https://www.youtube.com/channel/UCIMl5BTXPwyMZTuvUJ_zIaQ" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- footer 메뉴  -->
+            <div id="footer_menu">
+                <ul>
+                    <li>
+                        <a href="https://www.mapofm.net/suggest1">제보하기</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mapofm.net/policy">이용약관</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mapofm.net/privacy">개인정보처리방침</a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058214090" target="_blank">사업자정보확인</a>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+
+            <!-- 상호... 등등 -->
+            <div id="footer_info">
+                <p class="footer_info">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
+                <p class="footer_info">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
+                <br><br>
+                <p class="footer_info">Copyright © (사)마포공동체라디오. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>사연과 신청곡 | 마포FM</title>
+
+        <!-- 이미지 아이콘 사진 -->
+        <script src="https://kit.fontawesome.com/7659b9df8c.js" crossorigin="anonymous"></script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/header_footer.css">
+
+        <link rel="stylesheet" href="./css/djbox.css">
+
+        <script src="./js/header_footer.js"></script>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_wrapper">
+                 <!-- main logo -->
+            <div id="logo">
+                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+            </div>
+
+            <!-- main menu -->
+            <nav class="nav">
+                <div id="main_menu">
+                    <ul>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">소개</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./intro.html">마포FM?</a></li>
+                                <li><a href="./reward.html">후원</a></li>
+                                <li><a href="./road.html">오시는 길</a></li>
+                                <li><a href="./member.html">4층 사람들</a></li>
+                                <li><a href="./goods.html">굿즈</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text menu_page_blue">라디오</a>
+                            <ul id="menu_sub_text">
+                                <li class="sub_menu_page"><a class="menu_page_blue" href="./djbox.html">사연과 신청곡</a></li>
+                                <li><a href="./program.html">프로그램 소개</a></li>
+                                <li><a href="./timetable.html">편성표</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">사업</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./ad.html">라디오 광고</a></li>
+                                <li><a href="./radiopdschool.html">라디오PD교실</a></li>
+                                <li><a href="./samhaejoo.html">삼해주</a></li>
+                                <li><a href="./runradio.html">달려라!디오</a></li>
+                                <li><a href="./consulting.html">공동체라디오 컨설팅</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">커뮤니티</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./notice.html">공지사항</a></li>
+                                <li><a href="./news.html">뉴스레터</a></li>
+                                <li><a href="./maponews.html">마포소식</a></li>
+                                <li><a href="./board.html">증명서 신청</a></li>
+                                <li><a href="https://cafe.naver.com/mapofmboard/4" target="_blank">공유자료</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">대관/행사</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="https://www.mapofm.net/performance">공연 / 강의</a></li>
+                                <li><a href="https://www.mapofm.net/pluto">PLUTO (플루토)</a></li>
+                                <li><a href="https://www.mapofm.net/studio">스튜디오 대관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./login.html"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+           
+        </header>
+
+        <!-- ---------------------------------------------------------------------- -->
+
+        <!-- ----------------------------------------------------------------------- -->
+
+        <!-- header -> 모바일 용 -->
+        <header class="header_mobile">
+            <div class="header_wrapper_mobile">
+
+                <!-- 햄버거 모양 -->
+                <div id="menu_mobile_hambager" onclick="show_mobile_menu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- main logo -->
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="shop_cart_mobile">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+           
+        </header>
+
+        <div id="show_mobile_menu" class="display_none">
+            <div class="show_mobile_menu_01">
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="login_mobile">
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+
+            <div style="height: 2em;"></div>
+
+            <div class="show_mobile_menu_02">
+                <ul>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu01()">소개</a>
+                        <ul id="menu_sub_text_mobile01" class="menu_sub_text_mobile display_none">
+                            <li><a href="./intro.html">마포FM?</a></li>
+                            <li><a href="./reward.html">후원</a></li>
+                            <li><a href="./road.html">오시는 길</a></li>
+                            <li><a href="./member.html">4층 사람들</a></li>
+                            <li><a href="./goods.html">굿즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu02()">라디오</a>
+                        <ul id="menu_sub_text_mobile02" class="menu_sub_text_mobile display_none">
+                            <li><a href="./djbox.html">사연과 신청곡</a></li>
+                            <li><a href="./program.html">프로그램 소개</a></li>
+                            <li><a href="./timetable.html">편성표</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu03()">사업</a>
+                        <ul id="menu_sub_text_mobile03" class="menu_sub_text_mobile display_none">
+                            <li><a href="./ad.html">라디오 광고</a></li>
+                            <li><a href="./radiopdschool.html">라디오PD교실</a></li>
+                            <li><a href="./samhaejoo.html">삼해주</a></li>
+                            <li><a href="./runradio.html">달려라!디오</a></li>
+                            <li><a href="./consulting.html">공동체라디오 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu04()">커뮤니티</a>
+                        <ul id="menu_sub_text_mobile04" class="menu_sub_text_mobile display_none">
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="./news.html">뉴스레터</a></li>
+                            <li><a href="./maponews.html">마포소식</a></li>
+                            <li><a href="./board.html">증명서 신청</a></li>
+                            <li><a href="https://cafe.naver.com/mapofmboard/4" target="_blank">공유자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu05()">대관/행사</a>
+                        <ul id="menu_sub_text_mobile05" class="menu_sub_text_mobile display_none">
+                            <li><a href="https://www.mapofm.net/performance">공연 / 강의</a></li>
+                            <li><a href="https://www.mapofm.net/pluto">PLUTO (플루토)</a></li>
+                            <li><a href="https://www.mapofm.net/studio">스튜디오 대관</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="show_mobile_menu_space" onclick="show_mobile_out_touch()" class="display_none"></div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <section class="content_radio_back_img">
+            <article class="content_top_image">
+                <div id="content_radio_img">
+                    <h1>사연과 신청곡</h1>
+                    <p>제목에 말머리로 프로그램명을 적어주세요. 예) [오색오감]</p>
+
+                    <div class="button_history"><a href="">사연쓰기(클릭)</a></div>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="content">
+            
+            <article class="board_border">
+                <div id="board_list_wrap">
+                    <table class="board_list">
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>조회수</th>
+                            <th>등록일</th>
+                        </tr>
+                        <tr>
+                            <td>240</td>
+                            <td><a href="">(오로빌)오로빌님, 반가워요!</a></td>
+                            <td>라디오</td>
+                            <td>24</td>
+                            <td>2020.08.09</td>
+                        </tr>
+                        <tr>
+                            <td>237</td>
+                            <td><a href="">복고복고 이현승가수님 화이팅입니다~🥰</a></td>
+                            <td>어느날</td>
+                            <td>16</td>
+                            <td>2020.08.07</td>
+                        </tr>
+                        <tr>
+                            <td>236</td>
+                            <td><a href="">[오색오감] 전디님ㅎ 오랜만이에요~^^</a></td>
+                            <td>이호영</td>
+                            <td>29</td>
+                            <td>2020.08.04</td>
+                        </tr>
+                        <tr>
+                            <td>235</td>
+                            <td><a href="">(복고복고) 마포FM 청취자분들 꽃길만 걸으세요</a></td>
+                            <!-- 용인포돌이 -->
+                            <td>용인포돌이</td>
+                            <td>38</td>
+                            <td>2020.08.03</td>
+                        </tr>
+                        <tr>
+                            <td>233</td>
+                            <td><a href="">(복고복고) 마포FM 청취자분들 꽃길만 걸으세요</a></td>
+                            <td>용인포돌이</td>
+                            <td>50</td>
+                            <td>2020.08.03</td>
+                        </tr>
+                        <tr>
+                            <td>232</td>
+                            <td><a href="">(복고복고) 박성형 가수 "꽃길인생" 노래 응원합니다~~♡♡♡</a></td>
+                            <td>용인포돌이</td>
+                            <td>29</td>
+                            <td>2020.08.03</td>
+                        </tr>
+                        <tr>
+                            <!-- 개인만 보기 설정 -->
+                            <td>230</td>
+                            <td><a href="">꽃길인생 넘 좋아요~~</a></td>
+                            <td>용인포돌이</td>
+                            <td>0</td>
+                            <td>2020.08.03</td>
+                        </tr>
+                        <tr>
+                            <td>227</td>
+                            <td><a href="">[복고복고] 기다려지는 심다은에 복고복고방송시간</a></td>
+                            <td>이일권</td>
+                            <td>26</td>
+                            <td>2020.07.23</td>
+                        </tr>
+                        <tr>
+                            <td>226</td>
+                            <td><a href="">[마포속으로] 서영은 웃는거야 신청합니다</a></td>
+                            <td>유현우</td>
+                            <td>61</td>
+                            <td>2020.07.23</td>
+                        </tr>
+                        <tr>
+                            <td>225</td>
+                            <td><a href="">[복고복고] 심다은</a></td>
+                            <td>이일권</td>
+                            <td>64</td>
+                            <td>2020.08.09</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                
+            </article>
+
+            <article class="board_border_app">
+                <div id="board_list_wrap_app">
+                    <div class="board_list_app" id="board_list_app_top01">
+                        <a href=""><p>(오로빌)오로빌님, 반가워요!</p></a>
+                        <p>라디오 / 조회수 28 / 2020.08.09</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>복고복고 이현승가수님 화이팅입니다~🥰</p></a>
+                        <p>어느날 / 조회수 17 / 2020.08.07</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[오색오감] 전디님ㅎ오랜만이에요~^^</p></a>
+                        <p>이호영 / 조회수 30 / 2020.08.04</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>(복고복고) 모두 빠져봅시다</p></a>
+                        <p>용인포돌이 / 조회수 39 / 2020.08.03</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>(복고복고) 마포FM 청취자분들 꽃길만 걸으세요</p></a>
+                        <p>용인포돌이 / 조회수 51 / 2020.08.03</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>(복고복고) 박성현 가수 "꽃길인생" 노래 응원합니다~~♡♡♡</p></a>
+                        <p>용인포돌이 / 조회수 30 / 2020.08.03</p>
+                    </div>
+                    <div class="board_list_app">
+                        <a href=""><p>꽃길인생 넘 좋아요~~</p></a>
+                        <p>용인포돌이 / 조회수 0 / 2020.08.03</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[복고복고] 기다려지는 심다은에 복고복고방송시간</p></a>
+                        <p>이일권 / 조회수 27 / 2020.07.28</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[마포속으로]서영은 웃는거야 신청합니다</p></a>
+                        <p>유현우 / 조회수 65 / 2020.07.23</p>
+                    </div>
+
+                    <div class="board_list_app">
+                        <a href=""><p>[복고복고] 심다은</p></a>
+                        <p>이일권 / 조회수 67 / 2020.07.21</p>
+                    </div>
+                </div>
+                
+            </article>
+
+            <div class="content_bottom_wrap">
+                <div class="content_bottom">
+                    <form id="form_search" action="./login.php" method="POST">
+                        <input id="search" type="text" name="search"></label>
+                        <input id="search_button" type="submit" value="검색">    
+                    </form>
+
+                    <button id="write_text" onclick="clickWrite()">글쓰기</button>
+
+                </div>
+            </div>
+        
+            <div class="paging">
+                
+                <a href="#" class="numon">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                
+            </div>
+
+
+            <footer class="footer">
+
+                <div class="footer_wrapper">
+    
+                    <!-- 전화, 메세지, 페이스북, 인스타그램 등등의 아이콘들 24 24크기 -->
+                    <div class="footer_icon">
+                        <ul>
+                            <li id="footer_icon_phone">
+                                <a href="#"><i class="fas fa-phone-square-alt"></i></a>
+                            </li>
+                            <li id="footer_icon_message">
+                                <a href="#"><i class="fas fa-envelope-square"></i></a>
+                            </li>
+                            <li id="footer_icon_facebook">
+                                <a href="https://www.facebook.com/mapofm" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li id="footer_icon_instagram">
+                                <a href="https://www.instagram.com/mapofm/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                            </li>
+                            <li id="footer_icon_kakao_ch">
+                                <a href="https://pf.kakao.com/_ezKuxd" target="_blank"><i class="fas fa-check-square"></i></a>
+                            </li>
+                            <li id="footer_icon_youtube">
+                                <a href="https://www.youtube.com/channel/UCIMl5BTXPwyMZTuvUJ_zIaQ" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- footer 메뉴  -->
+                    <div id="footer_menu">
+                        <ul>
+                            <li>
+                                <a href="https://www.mapofm.net/suggest1">제보하기</a>
+                            </li>
+    
+                            <li>
+                                <a href="https://www.mapofm.net/policy">이용약관</a>
+                            </li>
+    
+                            <li>
+                                <a href="https://www.mapofm.net/privacy">개인정보처리방침</a>
+                            </li>
+    
+                            <li>
+                                <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058214090" target="_blank">사업자정보확인</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <br>
+    
+                    <!-- 상호... 등등 -->
+                    <div id="footer_info">
+                        <p class="footer_info">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
+                        <p class="footer_info">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
+                        <br><br>
+                        <p class="footer_info">Copyright © (사)마포공동체라디오. All Rights Reserved.</p>
+                    </div>
+    
+                </div>
+    
+            </footer>
+
+        </section>
+        
+
+    </body>
+</html>
