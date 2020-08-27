@@ -73,3 +73,6 @@ span{color: rgb(203, 174, 11);}
 #underbar{
     text-decoration: underline;
 }
+#carouselExampleSlidesOnly{
+    max-width: 980px;
+}
