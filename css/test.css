@@ -1,0 +1,350 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+
+.display_none{
+    display: none;
+}
+
+.display_block{
+    display: block;
+}
+
+.header_mobile{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    padding: 8px 0px;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    text-align: center;
+}
+.header *{
+    position: relative;
+    display: inline-block;
+}
+
+.header_wrapper{
+    width: 1240px;
+    max-width: 1240px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* logo */
+#logo{
+    left: 0px;
+    padding-left: 16px;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* 메뉴들 */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#main_menu{
+    right: 0px;
+    padding: 15px 0px;
+    padding-right: 16px;
+    font-size: 15px;
+}
+
+#main_menu .top_menu_text{
+    cursor: pointer;
+}
+
+#main_menu a{
+    color: black;
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#main_menu a:hover{
+    color: #999999CC;
+}
+
+/* ========================================================================================== */
+
+/* 추가 해당 페이지의 필요한 부분 */
+.header #main_menu .menu_sub_page .menu_page_blue, .sub_menu_page{
+    color: #195887;
+    margin-right: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 라디오 페이지의 헤더메뉴중 사연과 신청곡의 커서 포인트 */
+.header #main_menu .menu_sub_page {
+    padding: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.header #main_menu li{
+    position: relative;
+}
+
+#menu_sub_text{
+    display: none;
+    position: absolute;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-top: 0.5rem;
+    width: 10em;
+    padding: 0.3em 0em 0.3em 0em;
+}
+
+#menu_sub_text li{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0.5em 1em;
+    line-height: 1em;
+    text-align: left;
+    
+}
+
+.header #main_menu .menu_sub_page:hover #menu_sub_text, #menu_sub_text:hover{
+    display: block;
+}
+
+/* ============================================================================================== */
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.footer_wrapper{
+    /* display: inline-block; */
+    max-width: 980px;
+}
+
+.footer #footer_menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer #footer_menu li{
+    margin-right: 1em;
+}
+
+.footer #footer_menu li a{
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer #footer_menu li a:hover{
+    color: lightcoral;
+}
+
+#footer_info{
+    color: #222222;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon li{
+    margin: 1em 1em;
+}
+.footer_icon i{
+    font-size: 2rem;
+}
+.footer_icon #footer_icon_phone a, 
+.footer_icon #footer_icon_message a,
+.footer_icon #footer_icon_instagram a{
+    color: black;
+}
+.footer_icon #footer_icon_facebook a{
+    color: #3E5B9F;
+}
+.footer_icon #footer_icon_kakao_ch a{
+    color: #FAB900;
+}
+.footer_icon #footer_icon_youtube a{
+    color: #cd201f;
+}
+
+
+/* 반응형 웹 (RWD) */
+/* 미디어 쿼리 (해상도에 반응하기) */
+/* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
+@media screen and (max-width:640px) {
+
+    /* header 모바일 적용 */
+    .header{
+        display: none;
+    }
+
+    .header_mobile{
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.3em;
+    }
+    .header_mobile *{
+        position: relative;
+        display: inline-block;
+    }
+
+    .header_mobile a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .header_wrapper_mobile{
+        width: 100%;
+        margin: 0px 0.5em;
+        padding: 0px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #show_mobile_menu_space{
+        position: fixed;
+        width: 100%;
+        /* height: 1000vh; */
+        min-height: 100%;
+        z-index: 55554;
+        background-color: #FFFFFFDD;
+        cursor: pointer;
+    }
+
+    /* .display_none{
+        display: none;
+    }
+
+    .display_block{
+        display: block;
+    } */
+
+    #show_mobile_menu{
+        position: fixed;
+        width: 80%;
+        min-height: 100%;
+        z-index: 55555;
+        background-color: #313139;
+        padding: 0.5em;
+        overflow-y: scroll;
+        top: 0; bottom: 0;
+    }
+
+    #show_mobile_menu a{
+        width: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 1em 1em;
+    }
+
+    #show_mobile_menu li{
+        width: 100%;
+        display: block;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    #show_mobile_menu a:hover{
+        color: #FFFFFFCC;
+    }
+
+    /* 로고 포함하여 양 엽으로 나타나도록 */
+    .show_mobile_menu_01{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5em;
+    }
+
+    .menu_sub_text_mobile li{
+        margin-left: 2em;
+        font-size: 0.9em;
+    }
+
+    /* ======================================== */
+
+    #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+    .footer #footer_menu ul{
+        flex-direction: column;
+    }
+
+    .footer #footer_menu li{
+        margin: 0.5em 0px;
+    }
+
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .flex_start_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_start_back_wrap .flex_inner_wrap .rightContent_mopoStory,
+    .flex_back_wrap .flex_inner_wrap .leftContent_mapoStory,
+    .flex_back_wrap .flex_inner_wrap .rightContent_mopoStory{
+        width: 100%;
+    }
+
+    .footer #footer_menu ul{
+        flex-direction: column;
+    }
+    #footer_info .footer_info{
+        word-break: break-all;
+    }
+
+    .footer_icon ul{
+        flex-direction: column;
+    }
+}
