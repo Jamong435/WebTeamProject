@@ -1,30 +1,30 @@
 
 
-#main #text{
+#text{
     text-align: center;
     font-size: 15px;
     color: #BF1A1A;
     font-weight: bold;
 }
 
-#main .hide_line{
-    height: 2em;
+.hide_line{
+    height: 5em;
 }
 
-#main #body{
+#body{
     display: flex;
 }
 
-#main #body .item{
+#body .item{
     text-align: center;
 }
 
-#main #body .item .item_img{
+#body .item .item_img{
     width: 300px;
     height: 300px;
     overflow: hidden;
 }
 
-#main #body .item img{
+#body .item img{
     width: 100%;
 }
