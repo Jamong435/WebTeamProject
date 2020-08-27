@@ -63,10 +63,14 @@ a{text-decoration: none;}
     justify-content: center;
     align-items: center;
     
+    
 }
 #login{
     width: 500px;
     height: 600px;
+    padding-left: 6em;
+    
+   
    
     
 }
@@ -274,6 +278,35 @@ a{text-decoration: none;}
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.footer_icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon li{
+    margin: 1em 1em;
+}
+.footer_icon i{
+    font-size: 2rem;
+}
+.footer_icon #footer_icon_phone a, 
+.footer_icon #footer_icon_message a,
+.footer_icon #footer_icon_instagram a{
+    color: black;
+}
+.footer_icon #footer_icon_facebook a{
+    color: #3E5B9F;
+}
+.footer_icon #footer_icon_kakao_ch a{
+    color: #FAB900;
+}
+.footer_icon #footer_icon_youtube a{
+    color: #cd201f;
+}
+
+
 /* 반응형 웹 (RWD) */
 /* 미디어 쿼리 (해상도에 반응하기) */
 /* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
@@ -318,3 +351,6 @@ a{text-decoration: none;}
         word-break: break-all;
     }
 }
+
+
+

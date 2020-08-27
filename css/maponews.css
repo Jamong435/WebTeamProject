@@ -5,7 +5,12 @@
 }
 
 ul{list-style-type: none;}
-a{text-decoration: none;}
+a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+
+}
 
 .wrapper_notify{
     background-color: white;
@@ -266,6 +271,35 @@ td {
 #button{
     border: 0; padding: 45px; margin-top: 50px; background-color:  rgb(25, 88, 135); font-weight: bold;font-size: 30px; color: white;
 }
+
+.footer_icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon li{
+    margin: 1em 1em;
+}
+.footer_icon i{
+    font-size: 2rem;
+}
+.footer_icon #footer_icon_phone a, 
+.footer_icon #footer_icon_message a,
+.footer_icon #footer_icon_instagram a{
+    color: black;
+}
+.footer_icon #footer_icon_facebook a{
+    color: #3E5B9F;
+}
+.footer_icon #footer_icon_kakao_ch a{
+    color: #FAB900;
+}
+.footer_icon #footer_icon_youtube a{
+    color: #cd201f;
+}
+
 
 /* 반응형 웹 (RWD) */
 /* 미디어 쿼리 (해상도에 반응하기) */

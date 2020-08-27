@@ -270,11 +270,39 @@ a{text-decoration: none;}
     letter-spacing: -0.2px;
     
 }
+.footer_icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon li{
+    margin: 1em 1em;
+}
+.footer_icon i{
+    font-size: 2rem;
+}
+.footer_icon #footer_icon_phone a, 
+.footer_icon #footer_icon_message a,
+.footer_icon #footer_icon_instagram a{
+    color: black;
+}
+.footer_icon #footer_icon_facebook a{
+    color: #3E5B9F;
+}
+.footer_icon #footer_icon_kakao_ch a{
+    color: #FAB900;
+}
+.footer_icon #footer_icon_youtube a{
+    color: #cd201f;
+}
+
         #go{
            display: inline-block; 
            position: relative;
            top: 30px;
-           background-image: url(/image/img_main_headset.jpg); 
+           background-image: url(/image/img_index_page/img_main_headset.jpg); 
            width: 200px;
            height: 130px; 
            background-size: cover;
