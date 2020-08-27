@@ -151,7 +151,7 @@ h2{
     }
 
     article{
-        width: 300px;
+        width: 100%;
     }
 
     #img{
@@ -165,14 +165,14 @@ h2{
     font-weight: bold;
 
 
-}
+    }
 
 
-.detailtxt{
-    width: 300px;
-    text-align: justify;
-    margin-top: 20px;
-}
+    .detailtxt{
+        width: 300px;
+        text-align: justify;
+        margin-top: 20px;
+    }
 
     #container{
         flex-direction: column;
