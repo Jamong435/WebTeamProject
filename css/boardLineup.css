@@ -1,0 +1,101 @@
+*{margin: 0; padding: 0;}
+html{font-size: 14px; font-weight: bold;}
+#main{width: 850px; margin: auto; display: flex; flex-flow: wrap column;}
+#title_area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#block{
+    padding: 10px 0px;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 5px 15px;
+}
+
+.row_area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#writer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.input_flex{    
+    margin: 10px 5px 15px;
+    padding: 10px 0px;
+}
+
+#email{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#password{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#password_check{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#checkBox_area{
+    margin-bottom: 20px;
+}
+#checkBox_text{
+    font-size: 14px;
+}
+#privacy{
+    color: #6f4f1d;
+    font-size: 14px;
+}
+#privacy:hover{
+    text-decoration: none;
+}
+#icon_area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+
+}
+#textInput_area{
+    display: flex;
+    flex-flow: wrap column;
+}
+
+#input_textarea{
+    width: 100%;
+    height: 400px;
+}
+#button_area{
+    width: 80%;
+    padding: 30px 0px;
+    display: flex;
+    align-items: inherit;
+}
+.btn_padding{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 24.5px;
+    border-radius: 4px;    
+}
+#history_btn{    
+    background-color: white;
+    border: 2px solid #ff6868;
+    color: #ff6868;
+}
+#save_btn{
+    background-color: #ff6868;
+    border: 2px solid white;
+    color: white;
+}

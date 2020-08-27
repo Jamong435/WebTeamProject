@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>달려라!디오 | 마포FM</title>
+        <link rel="stylesheet" href="./css/header_footer.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="./css/runradio.css">
+
+
+        <!-- 이미지 아이콘 사진 -->
+        <script src="https://kit.fontawesome.com/90000e539c.js" crossorigin="anonymous"></script>
+
+        
+         <!-- js부르기 -->
+         <script src="./js/header_footer.js"></script>
+
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header_wrapper">
+                 <!-- main logo -->
+            <div id="logo">
+                <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+            </div>
+
+            <!-- main menu -->
+            <nav class="nav">
+                <div id="main_menu">
+                    <ul>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">소개</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./intro.html">마포FM?</a></li>
+                                <li><a href="./reward.html">후원</a></li>
+                                <li><a href="./road.html">오시는 길</a></li>
+                                <li><a href="./member.html">4층 사람들</a></li>
+                                <li><a href="./goods.html">굿즈</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">라디오</a>
+                            <ul id="menu_sub_text">
+                                <li ><a href="./djbox.html">사연과 신청곡</a></li>
+                                <li><a href="./program.html">프로그램 소개</a></li>
+                                <li><a href="./timetable.html">편성표</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text menu_page_blue">사업</a>
+                                <ul id="menu_sub_text">
+                                    <li><a href="./ad.html">라디오 광고</a></li>
+                                    <li><a href="./radioPDschool.html">라디오PD교실</a></li>
+                                    <li><a href="./samhaejoo.html">삼해주</a></li>
+                                    <li class="sub_menu_page"><a class="menu_page_blue" href="./runradio.html">달려라!디오</a></li>
+                                    <li><a href="./consulting.html">공동체라디오 컨설팅</a></li>
+                                </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">커뮤니티</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="./notice.html">공지사항</a></li>
+                                <li><a href="./news.html">뉴스레터</a></li>
+                                <li><a href="./maponews.html">마포소식</a></li>
+                                <li><a href="./board.html">증명서 신청</a></li>
+                                <li><a href="https://cafe.naver.com/mapofmboard/4" target="_blank">공유자료</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub_page">
+                            <a class="top_menu_text">대관/행사</a>
+                            <ul id="menu_sub_text">
+                                <li><a href="https://www.mapofm.net/performance">공연 / 강의</a></li>
+                                <li><a href="https://www.mapofm.net/pluto">PLUTO (플루토)</a></li>
+                                <li><a href="https://www.mapofm.net/studio">스튜디오 대관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./login.html"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+
+            </div>
+           
+        </header>
+
+        <!-- ----------------------------------------------------------------------- -->
+
+        <!-- header -> 모바일 용 -->
+        <header class="header_mobile">
+            <div class="header_wrapper_mobile">
+
+                <!-- 햄버거 모양 -->
+                <div id="menu_mobile_hambager" onclick="show_mobile_menu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- main logo -->
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="shop_cart_mobile">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+           
+        </header>
+
+        <div id="show_mobile_menu" class="display_none">
+            <div class="show_mobile_menu_01">
+                <div id="logo_mobile">
+                    <a class="logo" href="./index.html"> <img class="logo" src="./image/img_header_footer/img_top_main_mapoFM.png" alt="마포FM"> </a>
+                </div>
+
+                <div id="login_mobile">
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+
+            <div style="height: 2em;"></div>
+
+            <div class="show_mobile_menu_02">
+                <ul>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu01()">소개</a>
+                        <ul id="menu_sub_text_mobile01" class="menu_sub_text_mobile display_none">
+                            <li><a href="./intro.html">마포FM?</a></li>
+                            <li><a href="./reward.html">후원</a></li>
+                            <li><a href="./road.html">오시는 길</a></li>
+                            <li><a href="./member.html">4층 사람들</a></li>
+                            <li><a href="./goods.html">굿즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu02()">라디오</a>
+                        <ul id="menu_sub_text_mobile02" class="menu_sub_text_mobile display_none">
+                            <li><a href="./djbox.html">사연과 신청곡</a></li>
+                            <li><a href="./program.html">프로그램 소개</a></li>
+                            <li><a href="./timetable.html">편성표</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu03()">사업</a>
+                        <ul id="menu_sub_text_mobile03" class="menu_sub_text_mobile display_none">
+                            <li><a href="./ad.html">라디오 광고</a></li>
+                            <li><a href="./radiopdschool.html">라디오PD교실</a></li>
+                            <li><a href="./samhaejoo.html">삼해주</a></li>
+                            <li><a href="./runradio.html">달려라!디오</a></li>
+                            <li><a href="./consulting.html">공동체라디오 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu04()">커뮤니티</a>
+                        <ul id="menu_sub_text_mobile04" class="menu_sub_text_mobile display_none">
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="./news.html">뉴스레터</a></li>
+                            <li><a href="./maponews.html">마포소식</a></li>
+                            <li><a href="./board.html">증명서 신청</a></li>
+                            <li><a href="https://cafe.naver.com/mapofmboard/4" target="_blank">공유자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sub_page_mobile">
+                        <a class="top_menu_text_mobile" onclick="show_sub_menu05()">대관/행사</a>
+                        <ul id="menu_sub_text_mobile05" class="menu_sub_text_mobile display_none">
+                            <li><a href="https://www.mapofm.net/performance">공연 / 강의</a></li>
+                            <li><a href="https://www.mapofm.net/pluto">PLUTO (플루토)</a></li>
+                            <li><a href="https://www.mapofm.net/studio">스튜디오 대관</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="show_mobile_menu_space" onclick="show_mobile_out_touch()" class="display_none"></div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div id="body2">
+            
+        <section id="main"">
+            <div style="display: inline-block;">
+
+                <div><div style="height: 6rem;"></div></div>
+
+                <div id="text_set">
+                    <div id="section_text" >
+                        <div class="border_top"><hr></div>
+                        <div id="text_area">
+                            <p><span>어린이 라디오 DJ체험 프로그램<달려라~디오></span></p>
+                            <p>성인 대상 체험 문의는 유선으로 부탁드립니다</p>
+                        </div>                
+                        <div class="border_top"><hr></div>
+                    </div>
+                    <!-- section01 끝 -->
+                </div>
+
+                <div id="div_wap1">
+                    <div style="padding: 16px;">
+                        <p style="text-align: left;"><span>■ 체험은 이렇게 진행됩니다!</span></p>
+                    </div>
+                    <div class="img_wap1">
+                        <img class="imgs1" src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538462918042_500.jpg">
+                    </div>
+
+                    <div class="empty">
+                        <p></p>
+                    </div>
+                    <div class="img_wap1">
+                        <img class="imgs1" src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538463688818_500.jpg">
+                    </div>
+                    <div class="img_wap1">
+                        <img class="imgs1" src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538463761987_300.jpg">
+                    </div>
+
+                    <div style="padding: 16px;">
+                        <p style="text-align: left;"><span>■ 준비부터 끝까지 알찬 교육 !</span></p>
+                    </div>
+                    <div class="img_wap1">
+                        <img class="imgs02" src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538463744370_500.jpg">
+                    </div>
+                    <!-- 준비부터 끝까지 알찬교육 끝 -->
+
+                    <div style="padding: 16px;">
+                        <p style="text-align: left;"><span>■ 아이들이 좋아해요!</span></p>
+                    </div>
+
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                  <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538464780882_1000.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538464888282_1000.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538464767562_1000.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538464874712_1000.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/53441/default/image_1538464880664_1000.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <!-- 아이들이 좋아해요! 끝 -->
+                
+                    
+                    <!-- 참가신청은 이렇게 -->
+                    <div style="padding: 16px;">
+                        <p style="text-align: left;"><span>■ 참가신청은 이렇게!</span></p>
+                    </div>
+
+                    <div id="text_area_bottom">
+                        <p class="bottom"><span>신청방법 : 이메일 bezzang@mapofm.net 또는 우선 접수 02-332-3247</span></p>
+                        <p class="bottom"><span id="underbar">유치원 또는 어린이집 이름/연락처/예상참가인원/희망하는 날짜</span><span>를 알려주세요</span></p>
+                        <p class="bottom"><span>담당직원이 확인하고, 빠른 시일 내에 다시 연락을 드립니다!</span></p>
+                        <p class="bottom"></p><br>
+                        <p class="bottom"><span>참가비용 : </span></p>
+                        <p class="bottom"><span>체험 참여 25명 이하(기준) 총 300,000원 (부가세 별도)</span></p>
+                        <p class="bottom"></p><br>
+                    </div>  
+
+                </div>
+                <!-- section02번 끝 -->
+
+
+
+            </div>
+
+        </section>
+        </div>
+
+       <!-- Footer -->
+       <footer class="footer">
+
+           
+        <div class="footer_wrapper">
+
+            <!-- 전화, 메세지, 페이스북, 인스타그램 등등의 아이콘들 24 24크기 -->
+            <div class="footer_icon">
+                <ul>
+                    <li id="footer_icon_phone">
+                        <a href="#"><i class="fas fa-phone-square-alt"></i></a>
+                    </li>
+                    <li id="footer_icon_message">
+                        <a href="#"><i class="fas fa-envelope-square"></i></a>
+                    </li>
+                    <li id="footer_icon_facebook">
+                        <a href="https://www.facebook.com/mapofm" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li id="footer_icon_instagram">
+                        <a href="https://www.instagram.com/mapofm/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li id="footer_icon_kakao_ch">
+                        <a href="https://pf.kakao.com/_ezKuxd" target="_blank"><i class="fas fa-check-square"></i></a>
+                    </li>
+                    <li id="footer_icon_youtube">
+                        <a href="https://www.youtube.com/channel/UCIMl5BTXPwyMZTuvUJ_zIaQ" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- footer 메뉴  -->
+            <div id="footer_menu">
+                <ul>
+                    <li>
+                        <a href="https://www.mapofm.net/suggest1">제보하기</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mapofm.net/policy">이용약관</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mapofm.net/privacy">개인정보처리방침</a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058214090" target="_blank">사업자정보확인</a>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+
+            <!-- 상호... 등등 -->
+            <div id="footer_info">
+                <p class="footer_info">상호: 사단법인마포공동체라디오 | 대표: 송덕호 | 개인정보관리책임자: 미입력 | 전화: 02-332-3247 | 이메일: radiomapo@hanmail.net</p>
+                <p class="footer_info">주소: 서울시 마포구 성미산로88 세광빌딩 4층 (우 03986) | 사업자등록번호: 105-82-14090 | 통신판매: 미입력 | 호스팅제공자: (주)식스샵</p>
+                <br><br>
+                <p class="footer_info">Copyright © (사)마포공동체라디오. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+    </body>
+</html>
