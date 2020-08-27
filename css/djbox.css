@@ -178,6 +178,10 @@ caption{
     cursor: pointer;
 }
 
+.content_bottom_wrap .content_bottom #write_text a{
+    color: white;
+}
+
 .content_bottom_wrap .content_bottom #write_text:hover{
     background-color:#FF6868CC ; 
     color: #FFFFFFCC; 
