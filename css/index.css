@@ -317,6 +317,27 @@ a{text-decoration: none;}
         
            
         }
+        @media screen and (max-width:640px) {
+            #wrap_content{
+                width: 100%;
+                overflow: hidden;
+               
+               
+            }
+            #content_menu img{
+                width: 90%;
+                height: 70%;
+            }
+
+            #content_menu{
+                flex-direction: column;
+            }
+        }
+        #go{
+            width: 85%;
+            height: 240px;
+            margin-bottom: 50px;
+        }
 
         @media screen and (max-width: 350px){
            #content_menu>a>img{

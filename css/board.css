@@ -381,14 +381,18 @@ td {
 /* 화면 너비가 700보다 작을때 중괄호 안의 스타일 적용 */
 @media screen and (max-width:640px) {
     .board_list_wrap{
-        width: 420px;
+        width: 100%;
         overflow: hidden;
         flex-direction: column;
         flex-wrap: wrap;
+       
     }
+    
     .borad_border{
-      width: 100%;
+        width: 100%;
     }
+
+  
     .board_list tbody{
         /* 글씨안넘어가게 */
         
@@ -396,6 +400,7 @@ td {
         word-wrap: normal;
        
     }
+    
 
 
     #flex_start_back_wrap .flex_inner_wrap, .flex_back_wrap .flex_inner_wrap{
